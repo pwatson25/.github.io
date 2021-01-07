@@ -12,43 +12,45 @@ body {
 }
 
 main a {
-    color: #81B29A;
+    color: #AF8356;
     text-decoration: none;
 }
 
 main a:hover {
-    color: #F2CC8F;
+    color: #A05024ff;
 }
 
 footer a {
-    color: #3D405B;
+    color: #E79D70;
 }
 
 header {
     padding: 1rem;
-    background-color: #E07A5F
+    background-color: #8b4513
 }
 
 main {
     display: block;
     padding: 1rem;
-    background-color: #F4F1DE;
+    background-color: #DADADAff;
 }
 
 ul {
     width: 500px;
+    color: #8b4513;
 }
 
 h1 {
     font-size: 2rem;
     margin: 0.67em 0;
-    color: #F4F1DE;
+    color: #DADADAff;
     text-align: center;
 }
 
 h2 {
     font-size: 1.5rem;
     text-align: center;
+    color: #BE9F65;
 }
 
 hr {
@@ -67,7 +69,8 @@ hr {
 
 footer {
     font-size: 1rem;
-    background-color: #E07A5F;
+    background-color: #8b4513;
+    color: #E79D70;
     text-align: center;
     padding: 1rem;
 }
