@@ -1,0 +1,117 @@
+
+:root {
+  font-size: 14px;
+}
+
+.slider {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  line-height: 240px;
+}
+.slider > .radio {
+  display: none;
+}
+
+/* slide items */
+.slider > .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.slider > .radio:checked ~ .item {
+  transition: all 0.4s ease 0s;
+}
+/* labels ( prev. and next button ) */
+.slider > .label {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  height: 100%;
+  width: 25px;
+  background-color: rgb(199, 221, 217);
+  opacity: 0;
+  transition: opacity 0.2s ease 0s;
+}
+.slider:hover > .label {
+  opacity: 1;
+  transition: opacity 0.2s ease 0s;
+}
+/* indicators */
+.slider > .indicator {
+  position: relative;
+  display: inline-block;
+  bottom: 5px;
+  z-index: 5;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(199, 221, 217);
+  vertical-align: bottom;
+  line-height: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease 0s;
+}
+.slider:hover > .indicator {
+  opacity: 1;
+  transition: opacity 0.2s ease 0s;
+}
+.slider > .indicator label {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* [ active slide item ] asterisks: slide.length - 1 */
+.slider > .radio:checked + * + * + * + .item {
+  left: 0;
+  z-index: 3;
+}
+/* [ previous slide item ] asterisks: slide.length - 2 */
+.slider > .radio:checked + * + * + .item,
+.slider > .radio:first-of-type:checked ~ .item:last-of-type {
+  left: -100%;
+  z-index: 2;
+}
+/* [ next slide item ] asterisks: slide.length */
+.slider > .radio:checked + * + * + * + * + .item,
+.slider > .radio:last-of-type:checked ~ .item:first-of-type {
+  left: 100%;
+  z-index: 2;
+}
+/* [ previous button ] asterisks: ( slide.length - 1 ) * 2 */
+.slider > .radio:checked + * + * + * + * + * + * + .label,
+.slider > .radio:first-of-type:checked ~ .label:last-of-type {
+  left: 0;
+  display: block;
+}
+/* [ next button ] asterisks: slide.length * 2 */
+.slider > .radio:checked + * + * + * + * + * + * + * + * + .label,
+.slider > .radio:last-of-type:checked ~ .label:first-of-type {
+  right: 0;
+  display: block;
+}
+/* [ active indicator ] asterisks: ( slide.length * 3 ) - 1 */
+.slider
+  > .radio:checked
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + *
+  + .indicator {
+  background-color: rgba(127, 127, 127, 0.5);
+}
