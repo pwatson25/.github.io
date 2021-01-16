@@ -4,12 +4,10 @@ body {
 }
 
 main {
-
   padding: 1rem;
   color: black;
   max-width: 70rem;
-  margin-left: auto;
-  margin-right:auto; 
+  margin: auto;
 }
 header{
     position: fixed;
@@ -52,10 +50,9 @@ header{
   }
 .banner-box img {
   display: block;
-  margin-right: auto;
   max-width: 100%;
-}
-  
+  }
+
   .principles-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -71,11 +68,10 @@ header{
     grid-row: 3/5;
   }
   .rule-of-thirds-img {
-    grid-column: 3/6;
+    grid-column: 2/6;
     grid-row: 2/4;
     margin-top: 0.5rem;
-    width: 100%;
-    max-height: 100%;
+    max-width: 100%;
   }
   .headline-2 {
     grid-column: 1/6;
@@ -117,7 +113,7 @@ h5,
 h6 {
   padding: 0.3rem 0.75rem 0.3rem 0.75rem;
   background: rgba(38, 50, 56, 0.5);
-  font-family: "Chelsea Market", cursive;
+  font-family: 'Oswald', sans-serif;
   color: #ccc;
   text-shadow: 2px 2px 5px #1B8CA6;
 }
