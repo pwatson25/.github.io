@@ -2,11 +2,12 @@
     and (device-width : 375px) 
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) {
-    main {
-
-        color: black;
-        max-width: 100%;
-        margin: auto;
-      }
-    
+  main {
+    color: black;
+    max-width: 100%;
+    margin: auto;
+  }
+  .principles-grid {
+          
+    }   
 }
