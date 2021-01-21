@@ -1,13 +1,74 @@
 @media only screen 
     and (device-width : 375px) 
     and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) {
+    and (-webkit-device-pixel-ratio : 3) 
+{
   main {
     color: black;
     max-width: 100%;
     margin: auto;
   }
+
+
+  #brand h1{
+    letter-spacing: 3px;
+  }
+  nav{
+    display: none;;
+  }
   .principles-grid {
-          
-    }   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .headline-1 {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+  .paragraph-1 {
+    line-height: 1.3em;
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+  .rule-of-thirds-img {
+    grid-column: 1/6;
+    grid-row: 6/7;
+    margin-top: 0.5rem;
+    max-width: 100%;
+  }
+  .headline-2 {
+    grid-column: 1/6;
+    grid-row: 8/9;
+  }
+  .paragraph-2 {
+    text-align: left;
+    line-height: 1.5rem;
+    grid-column: 1/6;
+    grid-row: 10/12;
+  }
+  .hicks-laww-img {
+    grid-column: 1/6;
+    grid-row: 13/15;
+    margin-top: 0.5rem;
+    width: 100%;
+    max-height: 100%;
+  }
+  .headline-3 {
+  text-align: left;
+  line-height: 1.5em;
+  grid-column: 1/6;
+  grid-row: 16/17;
+  }
+  .paragraph-3 {
+    text-align: left;
+    line-height: 1.5em;
+    grid-column: 1/6;
+    grid-row: 18/20;
+  }
+ .slider {
+   grid-column: 1/6;
+   grid-row: 21/23;
+ }
 }
+
