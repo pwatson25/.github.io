@@ -100,7 +100,7 @@
     grid-template-columns: 1fr;
     margin: auto;
     padding: 10px;
-    background-color: #F2A477;
+    background-color: #F4F1DE;
    
   }
   
@@ -145,7 +145,7 @@
   .answers {
     font-weight: 300;
     color: #3F598C;
-    background: #F2AC57;
+    background: #F4F1DE;
     padding: 0px 15px;
     margin: 0px 0;
     height: 0;
@@ -197,7 +197,7 @@
   
  table {
     width: 100%;
-    min-width: 350px;
+   
     margin: auto;
     text-align: center;
   }
