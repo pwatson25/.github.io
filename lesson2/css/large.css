@@ -119,3 +119,13 @@ h2 {
   border-top: 5px double;
   border-bottom: 5px double;
 }
+footer {
+  margin-top: 2em;
+  background-color:  rgba(38, 50, 56, 0.5);
+  color: #F4F1DE;
+  text-shadow: 2px 2px 5px #1B8CA6;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px;
+}
+

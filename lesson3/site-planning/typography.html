@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/lesson3/css/small.css">
     <link rel="stylesheet" href="/lesson3/css/medium.css">
     <link rel="stylesheet" href="/lesson3/css/large.css">
+    <link rel="stylesheet" href="/lesson3/css/table.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
     <title>Peter Watson | Website Planning | Typography</title>
   </head>
@@ -37,44 +38,53 @@
   </div>
 
 <main>
-    <table class="typography-samples">
-        <tr>
-          <th>Site Header</th>
-          <th>Primary Navigation</th>
-          <th>Footer Navigation</th>
-          <th>Heading 1 (h1)</th>
-          <th>Heading 2 (h2)</th>
-          <th>Heading 3 (h3)</th>
-          <th>Paragraph (p)</th>
-        </tr>
-        <tr>
-          <td>2em</td>
-          <td>1.3em</td>
-          <td>1em</td>
-          <td>2em</td>
-          <td>1.4em</td>
-          <td>1.3em</td>
-          <td>1em</td>
-        </tr>
-        <tr>
-          <td>Montserrat</td>
-          <td>Montserrat</td>
-          <td>Montserrat</td>
-          <td>Roboto</td>
-          <td>Roboto</td>
-          <td>Roboto</td>
-          <td>Montserrat</td>
-        </tr>
-        <tr>
-          <td style="font-family: 'Roboto Condensed', sans-serif; font-size: 2em;">Sample</td>
-          <td style="font-family: 'Roboto Condensed', sans-serif; font-size: 1.3em;">Sample</td>
-          <td style="font-family: 'Roboto Condensed', sans-serif; font-size: 1em;">Sample</td>
-          <td style="font-family: 'Roboto Condensed', sans-serif; font-size: 2em;">Sample</td>
-          <td style="font-family: 'Montserrat', sans-serif; font-size: 1.4em;">Sample</td>
-          <td style="font-family: 'Montserrat', sans-serif; font-size: 1.3em;">Sample</td>
-          <td style="font-family:Roboto; font-size: 1em;">Sample</td>
-        </tr>
-      </table>
+  <table>
+    <caption>Typography Samples</caption>
+    <thead>
+      <tr>
+        <th scope="col">Site Header</th>
+        <th scope="col">Primary Navigation</th>
+        <th scope="col">Footer Navigation</th>
+        <th scope="col">Heading 1 (h1)</th>
+        <th scope="col">Heading 2 (h2)</th>
+        <th scope="col">Heading 3 (h3)</th>
+        <th scope="col">Paragraph (p)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Site Header">2em</td>
+        <td data-label="Primary Navigation">1.3em</td>
+        <td data-label="Footer Navigation">1em</td>
+        <td data-label="Heading 1 (h1)">2em</td>
+        <td data-label="Heading 2 (h2)">1.4em</td>
+        <td data-label="Heading 3 (h3)">1.3em</td>
+        <td data-label="Paragraph (p)">1em</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Site Header">Montserrat</td>
+        <td data-label="Primary Navigation">Montserrat</td>
+        <td data-label="Footer Navigation">Montserrat</td>
+        <td data-label="Heading 1 (h1)">Roboto</td>
+        <td data-label="Heading 2 (h2)">Roboto</td>
+        <td data-label="Heading 3 (h3)">Roboto</td>
+        <td data-label="Paragraph (p)">Montserrat</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Site Header" id="style1">Sample</td>
+        <td data-label="Primary Navigation" id="style2">Sample</td>
+        <td data-label="Footer Navigation" id="style3">Sample</td>
+        <td data-label="Heading 1 (h1)" id="style4">Sample</td>
+        <td data-label="Heading 2 (h2)" id="style5">Sample</td>
+        <td data-label="Heading 3 (h3)" id="style6">Sample</td>
+        <td data-label="Paragraph (p)" >Sample</td>
+        
+      </tr>
+
+    </body>
+  </table>
+  
+
     </main>
     <footer>
         <div>
