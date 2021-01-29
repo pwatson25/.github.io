@@ -6,8 +6,6 @@
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-	padding-bottom: 20em;
-
 }
 
 .footer-distributed .footer-left,
@@ -56,7 +54,7 @@
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 35%;
+	width: 25%;
 }
 
 
@@ -93,7 +91,7 @@
 /* Footer Right */
 
 .footer-distributed .footer-right{
-	width: 20%;
+	width: 30%;
 	vertical-align: middle;
 }
 

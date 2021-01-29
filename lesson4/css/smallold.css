@@ -40,16 +40,18 @@
 .subnav-content {
   display: none;
   position: absolute;
-  left: 0;
+  min-width: 160px;
   background-color: #3F598C;
-  width: 100%;
   z-index: 1;
 }
 
 .subnav-content a {
-  float: left;
+  float: none;
   color: white;
+  display: block;
+  text-align: left;
   text-decoration: none;
+  display: block;
 }
 
 .subnav-content a:hover {
@@ -65,32 +67,8 @@
     color: #F4F1DE;
     padding: 1px;
   }
+  
 
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.aside > img {
-   width: 100%
-}
-
-
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
 
   body {
     font-family: 'Montserrat', sans-serif;
@@ -117,12 +95,22 @@
       font-size: 1.3em;
   }
   
+  img {
+    width: 100%;
+    padding-top: 10px;
+  }
+
   #logo {
       width: 200px;
   }
   
   main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    padding: 10px;
     background-color: #F4F1DE;
+   
   }
   
   p {
@@ -145,8 +133,9 @@
     color: #F4F1DE;
     font-size: 1em;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
   }
+  
 
   a {
       color: #6B80BF;
