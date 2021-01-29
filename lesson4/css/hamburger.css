@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
   .navbar a:not(:first-child), .subnav .subnavbtn {
     display: none;
   }
@@ -9,7 +9,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
   .navbar.responsive {position: relative;}
   .navbar.responsive .icon {
     position: absolute;
