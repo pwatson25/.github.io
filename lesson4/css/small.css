@@ -154,6 +154,7 @@ header {
   
   main {
     background-color: #F4F1DE;
+    padding: 1em;
   }
 
   #hero {
@@ -179,6 +180,10 @@ header {
     font-size: 1em;
     text-align: center;
     padding: 1rem;
+  }
+  .copywrite {
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   a {

@@ -4,7 +4,7 @@
 	box-sizing:border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font: bold 1em sans-serif;
 }
 
 .footer-distributed .footer-left,
@@ -18,6 +18,7 @@
 
 .footer-distributed .footer-left{
 	width: 40%;
+	vertical-align: top;
 }
 
 /* The company logo */
@@ -25,7 +26,7 @@
 .footer-distributed h3{
 	color:  #bf766f;
 	font-family: "Montserrat";
-	font-size: 2em;
+	font-size: 1.8em;
 	margin-right: 11rem;
   	background: none;
 }
@@ -42,7 +43,7 @@
 
 .footer-distributed .footer-links a{
 	display:inline-block;
-	line-height: 1.8;
+	line-height: 1.6;
   	font-weight:400;
 	text-decoration: none;
 	color:  inherit;
@@ -53,10 +54,15 @@
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 25%;
+	width: 30%;
+	margin-top: 1em;
 }
 
+#email, #location, #phone {
+	padding: 0.2em;
+	width: 2em;
 
+}
 
 .footer-distributed .footer-center p{
 	display: inline-block;
@@ -90,8 +96,8 @@
 /* Footer Right */
 
 .footer-distributed .footer-right{
-	width: 30%;
-	vertical-align: middle;
+	width: 25%;
+	vertical-align: top;
 }
 
 
@@ -101,8 +107,12 @@
 	height: 100%;
 	cursor: pointer;
 	line-height: 35px;
-;
+
 }
+#facebook, #pinterest, #youtube{
+    padding: 0.2em;
+	width: 2.5em;
+  }
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
@@ -124,5 +134,7 @@
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
-
+	.footer-distributed h3{
+	margin: auto 0;
+	}	
 }

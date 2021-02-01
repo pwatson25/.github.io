@@ -36,4 +36,11 @@
   .navbar{
     margin:0;
   }
+  .footer-icons{
+    display:inline-flex;
+  }
+
+  .copywrite {
+    padding-top: 1em;
+  }
 }
