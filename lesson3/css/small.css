@@ -121,7 +121,13 @@
   main {
     background-color: #F4F1DE;
   }
-  
+  .column1,.column2,.column3{
+    width: 400px;
+    background-color: rgb(245, 242, 230);
+    border-style: solid;
+    border-width: 3px;
+    border-color: grey; 
+   }
   p {
     font-size: 1em;
     color:	#3D405B;
