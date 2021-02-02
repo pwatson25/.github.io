@@ -112,21 +112,13 @@ header {
   }
 
   .weatherSummary {
-	position: absolute;
-	top: 5em;
-	left: 3.125em;
-	background: radial-gradient(#eee, #4567aa);
-  border: 1px solid #000;
-  border-radius: 0 50% 50% 50%;
-  transform: rotate(45deg);
-	padding: 1.5rem;
-	box-shadow: 0 0 30px #111;
-	opacity: .8;
-  }
-  
-  .weatherText {
-    transform: rotate(-45deg);
-  }
+    display: block;
+    top: 25px;
+    right: 50px;
+    background: linear-gradient(350deg, rgba(95,121,254,1) 10%, rgba(142,205,204,1) 35%, rgba(228,240,251,1) 60%);
+    border: 1px solid #000;
+    padding: .5rem;
+    }
 
 * {
   box-sizing: border-box;

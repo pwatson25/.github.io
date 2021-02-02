@@ -40,6 +40,27 @@
   ul a.active{
     color:yellow;
   }
+  .herodiv {
+    margin: 10px auto;
+    position: relative;
+  }
+
+  .weatherSummary {
+	position: absolute;
+	top: 5em;
+	left: 3.125em;
+	background: radial-gradient(#eee, #4567aa);
+  border: 1px solid #000;
+  border-radius: 0 50% 50% 50%;
+  transform: rotate(45deg);
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #111;
+	opacity: .8;
+  }
+  
+  .weatherText {
+    transform: rotate(-45deg);
+  }
   .footer-icons{
     display:inline-flex;
   }
