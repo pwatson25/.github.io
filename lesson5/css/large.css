@@ -37,14 +37,10 @@
   .navbar{
     margin:0;
   }
-  ul a.active{
-    color:yellow;
-  }
-  .herodiv {
+  .herodiv{
     margin: 10px auto;
     position: relative;
   }
-
   .weatherSummary {
 	position: absolute;
 	top: 5em;
@@ -54,12 +50,31 @@
   border-radius: 0 50% 50% 50%;
   transform: rotate(45deg);
 	padding: 1.5rem;
-	box-shadow: 0 0 30px #111;
+	box-shadow: 0 0 20px #111;
 	opacity: .8;
   }
+
+  .smallweatherSummary {
+  display: none;
+  }
+
   
   .weatherText {
     transform: rotate(-45deg);
+    display: block;
+    text-align: center;
+  }
+
+  #articleimg {
+    float: right; 
+    }
+  .article::after {
+   content: "";
+    clear:both;
+    display: table;
+  }
+  .article{
+    padding-bottom: 1em;
   }
   .footer-icons{
     display:inline-flex;

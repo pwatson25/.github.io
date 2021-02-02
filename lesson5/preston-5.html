@@ -13,89 +13,91 @@
     <link rel="stylesheet" href="/lesson5/css/large.css">
     <link rel="stylesheet" href="/lesson5/css/hamburger.css">
     <link rel="stylesheet" href="/lesson5/css/footer.css">
-
-    
-
     <title>Weather Me Now | Peter Watson</title>
   </head>
   
   <body>
-    
     <header>
-            <img class="logo-box" src="/lesson4/images/weatherworksicon.png" alt="Weather Me Now Logo">
-        
+      <img class="logo-box" src="/lesson4/images/weatherworksicon.png" alt="Weather Me Now Logo">
         <div class="banner">
-            <h1>Weather Me Now</h1>
-            <div class="siteslogan">For The Meteroligist At Heart</div>
+          <h1>Weather Me Now</h1>
+          <div class="siteslogan">For The Meteroligist At Heart</div>
         </div>
     </header>
   
 
     <div class="navbar" id="myNavBar">
-        <a href="#" class="active">Home</a>
-        <a href="../comotia-template/index.html">Soda Springs</a>
-        <a href="../comotia-template/index.html">Fish Haven</a>
-        <a href="../comotia-template/index.html">Storm Centers</a>
-        <a href="../comotia-template/index.html">Gallery</a>
-        <div class="subnav">
-          <button class="subnavbtn">Website Planning Document</button>
-          <div class="subnav-content">
-            <a href="/lesson3/site-planning/target-audience.html">Target Audience</a>
-            <a href="/lesson3/site-planning/color-scheme.html">Color Scheme</a>
-            <a href="/lesson3/site-planning/typography.html">Typography</a>
-          </div>
+      <a href="#" class="active">Home</a>
+      <a href="../comotia-template/index.html">Soda Springs</a>
+      <a href="../comotia-template/index.html">Fish Haven</a>
+      <a href="../comotia-template/index.html">Storm Centers</a>
+      <a href="../comotia-template/index.html">Gallery</a>
+      <div class="subnav">
+        <button class="subnavbtn">Website Planning Document</button>
+        <div class="subnav-content">
+          <a href="/lesson3/site-planning/target-audience.html">Target Audience</a>
+          <a href="/lesson3/site-planning/color-scheme.html">Color Scheme</a>
+          <a href="/lesson3/site-planning/typography.html">Typography</a>
         </div>
+      </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            &#9776;
+          &#9776;
         </a>
     </div>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myNavBar");
-                if (x.className === "navbar") {
-                    x.className += " responsive";
-                } else {
-                x.className = "navbar";
-                }
-            }
-        </script> 
-        <div class="row">
-            <div class="col-12 col-s-12">
-                <main>
-              <div class="herodiv">
-              <h2>Preston Idaho</h2>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavBar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+      }
+    </script> 
+    <div class="row">
+      <div class="col-12 col-s-12">
+        <main>
+          <div class="herodiv">              
+            <h2>Preston Idaho</h2>
               <img src="/lesson4/images/weatherbanner.png" alt="heroimage" id="hero">
-              <section class="weatherSummary">
+            <section class="weatherSummary">
                 <section class="weatherText">
+                <h2>Today's Weather</h2>
+                <p>High: <span id="high">42.7</span></p>
+                <p>Low: <span id="low">35.2</span></p>
+                <p>Forcast: <span id="forcast">Rainy</span></p>
+              </section>
+            </section>
+            <section class="smallweatherSummary">
+              <section class="smallweatherText">
               <h2>Today's Weather</h2>
               <p>High: <span id="high">42.7</span></p>
               <p>Low: <span id="low">35.2</span></p>
               <p>Forcast: <span id="forcast">Rainy</span></p>
-                </section>
-            </section>
-              </div>              
-              <h2>5 Day Forecast</h2>
-            <img src="https://via.placeholder.com/150" alt="placeholder">
-            <img src="https://via.placeholder.com/150" alt="placeholder">
-            <img src="https://via.placeholder.com/150" alt="placeholder">
-            <img src="https://via.placeholder.com/150" alt="placeholder">
-            <img src="https://via.placeholder.com/150" alt="placeholder">
-              <h2>Article</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet leo interdum, faucibus ligula quis, auctor lacus. Nulla gravida ex et tortor consectetur pellentesque. Integer laoreet neque eu mi aliquam pulvinar. Nullam purus libero, finibus ac ligula et, convallis maximus est. </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet leo interdum, faucibus ligula quis, auctor lacus. Nulla gravida ex et tortor consectetur pellentesque. Integer laoreet neque eu mi aliquam pulvinar. Nullam purus libero, finibus ac ligula et, convallis maximus est. </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet leo interdum, faucibus ligula quis, auctor lacus. Nulla gravida ex et tortor consectetur pellentesque. Integer laoreet neque eu mi aliquam pulvinar. Nullam purus libero, finibus ac ligula et, convallis maximus est. </p>
-          
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <h3>
+              </section>
+            </section> 
+          </div>          
+          <h2>5 Day Forecast</h2>
+          <img src="https://via.placeholder.com/150" alt="placeholder">
+          <img src="https://via.placeholder.com/150" alt="placeholder">
+          <img src="https://via.placeholder.com/150" alt="placeholder">
+          <img src="https://via.placeholder.com/150" alt="placeholder">
+          <img src="https://via.placeholder.com/150" alt="placeholder">
+          <p style="clear:right"></p>
+          <div class="article">
+            <h2>Article</h2>
+            <p><img src="https://via.placeholder.com/170X170" alt="article img" id="articleimg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum tortor venenatis fermentum. Aenean nisl neque, dignissim a ligula ut, fermentum vehicula ligula. Duis quis risus at neque malesuada posuere. Sed maximus urna ac vulputate iaculis. Nam ut mattis sem. Praesent hendrerit ultrices mauris, ac sagittis ipsum rutrum sit amet. Nullam in purus turpis. Donec convallis quam purus, at suscipit neque posuere et. Ut commodo maximus massa non rutrum. Vestibulum ex lorem, lacinia sit amet sem quis, lacinia rhoncus enim. Aliquam consectetur rutrum arcu, id egestas nulla lobortis et. Maecenas turpis sapien, rhoncus vitae euismod in, vehicula eu velit. Pellentesque vitae diam in ligula accumsan dictum.</p>
+            </div>
+      <footer class="footer-distributed">
+        <div class="footer-left">
+        <h3>
         Peter J Watson
-      </h3>
+        </h3>
 
       <p class="footer-links">
         <a href="/lesson3/site-planning/target-audience.html">Target Audience</a>
         <a href="/lesson3/site-planning/color-scheme.html">Color Scheme</a>
         <a href="/lesson3/site-planning/typography.html">Typography</a>
-        
 
         <a
           href="https://cdn.glitch.com/73c8e092-1b7a-4fdb-bd88-9b4e8b693097%2FPeter%20Watson%20Project%20Report.docx?v=1595497675580"
@@ -177,6 +179,5 @@
     <script src="/lesson3/javascript/lastUpdate.js"></script>
     <script src="/lesson5/javascript/main.js"></script>
 
-    </body>
-    
-    </html>  
+  </body>
+</html>  
