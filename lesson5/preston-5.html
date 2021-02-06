@@ -16,19 +16,20 @@
     <title>Weather Me Now | Peter Watson</title>
   </head>
   
-  <body>
+  <body onload="insertannoucement()">
+    <div id="annoucementtext" class=""></div>
     <header>
       <img class="logo-box" src="/lesson4/images/weatherworksicon.png" alt="Weather Me Now Logo">
         <div class="banner">
           <h1>Weather Me Now</h1>
           <div class="siteslogan">For The Meteroligist At Heart</div>
-          <div class="announcment"><p id="day-text"></p></div>
         </div>
     </header>
   
 
     <div class="navbar" id="myNavBar">
-      <a href="#" class="active">Home</a>
+      <a href="/">Portal</a>
+      <a href="#" class="active">Preston Home</a>
       <a href="../comotia-template/index.html">Soda Springs</a>
       <a href="../comotia-template/index.html">Fish Haven</a>
       <a href="../comotia-template/index.html">Storm Centers</a>
@@ -45,24 +46,16 @@
           &#9776;
         </a>
     </div>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myNavBar");
-          if (x.className === "navbar") {
-            x.className += " responsive";
-          } else {
-            x.className = "navbar";
-          }
-      }
-    </script> 
+
     <div class="row">
       <div class="col-12 col-s-12">
         <main>
-          <div class="herodiv">              
+          <div class="herodiv">   
+            <section class="rain">           
             <h2>Preston Idaho</h2>
               <img src="/lesson4/images/weatherbanner.png" alt="heroimage" id="hero">
             <section class="weatherSummary">
-                <section class="weatherText">
+              <section class="weatherText">
                 <h2>Today's Weather</h2>
                 <p>High: <span id="high">42.7</span></p>
                 <p>Low: <span id="low">35.2</span></p>
@@ -72,11 +65,12 @@
             <section class="smallweatherSummary">
               <section class="smallweatherText">
               <h2>Today's Weather</h2>
-              <p>High: <span id="high">42.7</span></p>
-              <p>Low: <span id="low">35.2</span></p>
-              <p>Forcast: <span id="forcast">Rainy</span></p>
+              <p>High: <span id="high2">42.7</span></p>
+              <p>Low: <span id="low2">35.2</span></p>
+              <p>Forcast: <span id="forcast2">Rainy</span></p>
               </section>
-            </section> 
+            </section>
+          </section>
           </div>          
           <h2>5 Day Forecast</h2>
           <img src="https://via.placeholder.com/150" alt="placeholder">
@@ -99,13 +93,34 @@
         <a href="/lesson3/site-planning/target-audience.html">Target Audience</a>
         <a href="/lesson3/site-planning/color-scheme.html">Color Scheme</a>
         <a href="/lesson3/site-planning/typography.html">Typography</a>
-
-        <a
-          href="https://cdn.glitch.com/73c8e092-1b7a-4fdb-bd88-9b4e8b693097%2FPeter%20Watson%20Project%20Report.docx?v=1595497675580"
-          target="_blank"
-          >Project Report</a
-        >
       </p>
+      <div class="footer-icons">
+        <a
+          href="#"
+          target="_blank"
+        >
+          <img
+            src="/lesson4/images/facebook.png"
+            id="facebook"
+            alt="Facebook icon"
+        /></a>
+        <a
+          href="#"
+          target="_blank"
+        >
+          <img
+            src="/lesson4/images/pinterest.png"
+            id="pinterest"
+            alt="Pinterest icon"
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img
+            src="/lesson4/images/youtube.png"
+            id="youtube"
+            alt="Youtube icon"
+          />
+        </a>
+    </div>
 
     </div>
 
@@ -132,40 +147,14 @@
 
     <div class="footer-right">
       <div class="footer-company-about">
-        <h4>About the company</h4>
-        <p>
-        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod
-        convallis velit, eu auctor lacus vehicula sit amet.
-        </p>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="300" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=preston,%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+          </div>
+        </div>
       </div>
 
-      <div class="footer-icons">
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              src="/lesson4/images/facebook.png"
-              id="facebook"
-              alt="Facebook icon"
-          /></a>
-          <a
-            href="#"
-            target="_blank"
-          >
-            <img
-              src="/lesson4/images/pinterest.png"
-              id="pinterest"
-              alt="Pinterest icon"
-          /></a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img
-              src="/lesson4/images/youtube.png"
-              id="youtube"
-              alt="Youtube icon"
-            />
-          </a>
-      </div>
+
     </div>
 </footer>
       <div class="copywrite">

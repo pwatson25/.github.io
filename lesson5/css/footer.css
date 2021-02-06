@@ -136,5 +136,9 @@
 	}
 	.footer-distributed h3{
 	margin: auto 0;
-	}	
+	}
+	.mapouter {
+		position:relative;
+		margin: auto; 
+	}
 }

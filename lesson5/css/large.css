@@ -28,8 +28,24 @@
     padding: 15px;
     background-color: #6B80BF;
   }
+  #annoucementtext{
+    position: absolute;
+    margin-left: 75%;
+    background-color: yellow;
+    font-size: 1em;
+    width: 25%;
+    padding-top:0.6em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+  #annoucementtext.notfriday{
+    display: none;
+  }
   .banner {
     margin-bottom: 0.3em;
+  }
+  .sloganSmall {
+    display: none;
   }
   .header {
     margin-top: 0.3em;
@@ -83,5 +99,21 @@
 
   .copywrite {
     padding-top: 1em;
+  }
+  
+
+ .mapouter {
+   position:relative;
+   text-align:right;
+   height:250px;
+   width:300px;
+   box-shadow: 0 0 20px #808080;
+ }
+  .gmap_canvas {
+    background:none!important;
+    height:250px;
+    width:300px;
+    border:5.5em; 
+    margin:0;
   }
 }
