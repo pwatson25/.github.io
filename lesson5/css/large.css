@@ -86,7 +86,7 @@
     float: right; 
     }
   .article::after {
-   content: "";
+    content: "";
     clear:both;
     display: table;
   }
