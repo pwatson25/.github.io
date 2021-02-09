@@ -1,0 +1,119 @@
+@media only screen and (min-width: 1008px) {
+	main {
+        max-width: 1920px;
+        padding: 2.5em;
+        margin-left:10rem;
+        margin-right:10rem;
+        margin-top:1em;
+        padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    background-color: #6B80BF;
+  }
+  #annoucementtext{
+    position: absolute;
+    margin-left: 75%;
+    background-color: yellow;
+    font-size: 1em;
+    width: 25%;
+    padding-top:0.6em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+  #annoucementtext.notfriday{
+    display: none;
+  }
+  .banner {
+    margin-bottom: 0.3em;
+  }
+  .sloganSmall {
+    display: none;
+  }
+  .header {
+    margin-top: 0.3em;
+  }
+
+  .navbar{
+    margin:0;
+  }
+  .herodiv{
+    margin: 10px auto;
+    position: relative;
+  }
+  .weatherSummary {
+	position: absolute;
+	top: 5em;
+	left: 3.125em;
+	background: radial-gradient(#eee, #4567aa);
+  border: 1px solid #000;
+  border-radius: 0 50% 50% 50%;
+  transform: rotate(45deg);
+	padding: 1.5rem;
+	box-shadow: 0 0 20px #111;
+	opacity: .8;
+  }
+
+  .smallweatherSummary {
+  display: none;
+  }
+
+  
+  .weatherText {
+    transform: rotate(-45deg);
+    display: block;
+    text-align: center;
+  }
+
+  #articleimg {
+    float: right; 
+    }
+  .article::after {
+   content: "";
+    clear:both;
+    display: table;
+  }
+  .article{
+    padding-bottom: 1em;
+  }
+  .footer-icons{
+    display:inline-flex;
+  }
+
+  .copywrite {
+    padding-top: 1em;
+  }
+  
+
+ .mapouter {
+   position:relative;
+   text-align:right;
+   height:250px;
+   width:300px;
+   box-shadow: 0 0 20px #808080;
+ }
+  .gmap_canvas {
+    background:none!important;
+    height:250px;
+    width:300px;
+    border:5.5em; 
+    margin:0;
+  }
+}
