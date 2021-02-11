@@ -60,13 +60,14 @@
   }
   .weatherSummary {
 	position: absolute;
-	top: 5em;
+	top: 6em;
 	left: 3.125em;
-	background: radial-gradient(#eee, #4567aa);
+  width: 15rem;
+  height: 15rem;
+  background: radial-gradient(#eee, #4567aa);
   border: 1px solid #000;
   border-radius: 0 50% 50% 50%;
   transform: rotate(45deg);
-	padding: 1.5rem;
 	box-shadow: 0 0 20px #111;
 	opacity: .8;
   }
@@ -80,6 +81,9 @@
     transform: rotate(-45deg);
     display: block;
     text-align: center;
+    position: absolute;
+    top: 1.2em;
+	  left: 1.75em;
   }
 
   #articleimg {
