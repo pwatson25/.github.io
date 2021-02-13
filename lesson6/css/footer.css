@@ -24,7 +24,7 @@
 /* The company logo */
 
 .footer-distributed h3{
-	color:  #9c4d45;
+	color:  #ccccc;
 	font-family: "Montserrat";
 	font-size: 1.8em;
 	margin-right: 11rem;
@@ -80,7 +80,7 @@
 }
 
 .footer-distributed .footer-center p a{
-	color: #6b80bf;
+	color: #0892d0;
 	text-decoration: none;
 }
 
