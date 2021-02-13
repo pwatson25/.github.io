@@ -1,6 +1,6 @@
 /*Footer*/
 .footer-distributed{
-	background: #F2AC57;
+	background: #ee9528;
 	box-sizing:border-box;
 	width: 100%;
 	text-align: left;
@@ -24,7 +24,7 @@
 /* The company logo */
 
 .footer-distributed h3{
-	color:  #bf766f;
+	color:  #9c4d45;
 	font-family: "Montserrat";
 	font-size: 1.8em;
 	margin-right: 11rem;
