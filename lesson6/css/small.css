@@ -129,7 +129,10 @@ header {
   main figure.articlephoto img {
     width: 100%;
   }
-
+  main figure.articlephoto figcaption {
+   text-align: center;
+   font-size:0.75rem;
+  }
   picture.heroImage {
     display: block;
   }
