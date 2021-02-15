@@ -1,6 +1,6 @@
 /*Footer*/
 .footer-distributed{
-	background: #ee9528;
+	background: #f0a83c;
 	box-sizing:border-box;
 	width: 100%;
 	text-align: left;
@@ -24,7 +24,7 @@
 /* The company logo */
 
 .footer-distributed h3{
-	color:  #ffffff;
+	color:  #212121;
 	font-family: "Montserrat";
 	font-size: 1.8em;
 	font-weight: bold;
@@ -37,7 +37,7 @@
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color:  #ffffff;
+	color:  #212121;
 	margin: 1.2em 0 0.8em;
 	padding: 0;
 }
@@ -72,7 +72,7 @@
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #ffffff;
+	color: #000;
   	font-weight:400;
 	vertical-align: middle;
 	margin:0;
@@ -86,7 +86,7 @@
 }
 
 .footer-distributed .footer-center p a{
-	color: #3c28ee;
+	color: #1F0DBF;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -96,7 +96,7 @@
   font-weight:300;
   font-size: 20px;
   left: 0;
-  color: #fff;
+  color: #212121;
   display: inline-block;
 }
 
