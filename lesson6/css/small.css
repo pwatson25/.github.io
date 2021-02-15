@@ -6,27 +6,29 @@
 .navbar a {
   float: left;
   display: block;
-  font-size: 1em;
+  font-size: 1.1em;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.navbar a.active {background: #3F598C; color: #ee9528;}
+.navbar a.active {
+  background: #3F598C; 
+  color: #ee9528;
+  font-weight: bold;
+}
 
 .navbar .icon {
   display: none;
 }
 
 
-
 header {
   background-color: #ee9528;
   color: #F8F6EB;
   padding: 1px;
-
-  
+  font-weight: bold;  
   }
   .logo-box {
     float: left;
@@ -156,9 +158,47 @@ header {
     display: none;
   }
 
+  .flex {
+    display: flex;
+    /* flex-direction: row; */
+    /* let us combine row and wrap with flow */
+    flex-flow: row wrap;
+  }
+  
+  .flex-col {
+    flex: 1 1 auto;
+    background: radial-gradient(#eee, #bed);
+  }
+  .flex-col, .column-col, .grid-col {
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    text-align: center;
+  }
+  .flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+    opacity: 0.75;
+    background-color: black;
+    color: #9c4d45;
+  }
+  .flex, .column, .grid {
+    border-right: 1px solid #333;
+  }
+  span.col-head {
+    color:#9c4d45;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  span.data {
+    font-size: 1.75em;
+  }
+  #monday, #tuesday, #wednesday, #thursday, #friday{
+    font-size: 5em;
+    color:teal;
+    margin-top: 1em;
+  }
+ 
   
   footer {
-    background-color:  #ee9528;
+    background-color: #ee9528;
     color: #F8F6EB;
     font-size: 1em;
     text-align: center;

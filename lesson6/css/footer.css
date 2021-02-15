@@ -27,6 +27,7 @@
 	color:  #ffffff;
 	font-family: "Montserrat";
 	font-size: 1.8em;
+	font-weight: bold;
 	margin-right: 11rem;
   	background: none;
 }
@@ -44,9 +45,10 @@
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.6;
-  	font-weight:400;
+	font-weight: bold;
 	text-decoration: none;
 	color:  inherit;
+
 }
 
 
@@ -60,8 +62,12 @@
 
 #email, #location, #phone {
 	padding: 0.2em;
-	width: 2em;
-
+	width: 2.5em;
+	position: relative;
+	top:1em;
+}
+#location {
+	width: 2.75em;
 }
 
 .footer-distributed .footer-center p{
@@ -80,8 +86,9 @@
 }
 
 .footer-distributed .footer-center p a{
-	color: #0892d0;
+	color: #3c28ee;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .footer-distributed .footer-links a:before {
