@@ -8,3 +8,4 @@ let windchill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, .16)) + (
      windchill = "N/A";
   }
 document.getElementById("windchill").innerHTML = windchill;
+document.getElementById("windchill2").innerHTML = windchill;
