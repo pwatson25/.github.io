@@ -76,7 +76,6 @@
   display: none;
   }
 
-  
   .weatherText {
     transform: rotate(-45deg);
     display: block;
@@ -86,9 +85,14 @@
 	  left: 2.2em;
   }
 
-  #articleimg {
-    float: right; 
-    }
+  main figure.articlephoto {
+    width:66%;
+    margin: 0 0 0 2%;
+    float: right;
+  }
+  main figure.articlephoto img {
+    width: 100%;
+  }
   .article::after {
    content: "";
     clear:both;

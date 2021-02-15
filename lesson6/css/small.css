@@ -18,6 +18,9 @@
   color: white;
   font-weight: bold;
 }
+.navbar a:hover {
+  background-color: #3F598C;
+}
 
 .navbar .icon {
   display: none;
@@ -118,6 +121,14 @@ header {
     background-color: #F4F1DE;
     padding: 1em;
   }
+  main figure.articlephoto {
+    width:100%;
+    margin: auto;
+    display: block;
+  }
+  main figure.articlephoto img {
+    width: 100%;
+  }
 
   picture.heroImage {
     display: block;
@@ -125,12 +136,12 @@ header {
   main picture.heroImage img {
     width: 100%;
   }
-  section.weatherSummary h2 {
+  .weatherSummary h2 {
     opacity: 100%;
     font-size: 1.75em;
     font-weight: bold;
   }
-  section.weatherSummary p {
+  .weatherSummary p {
     opacity: 100%;
     font-size: 1em;
     font-weight: bold;
@@ -139,10 +150,7 @@ header {
     font-size: 1em;
     color:	#3D405B;
   }
-  #articleimg {
-    display: block;
-    margin:auto;
-  }
+
   li {
     color:	#3D405B;
   }
@@ -158,11 +166,11 @@ header {
     display: none;
   }
 
-  .flex {
+ /* .flex {
     display: flex;
     /* flex-direction: row; */
-    /* let us combine row and wrap with flow */
-    flex-flow: row wrap;
+    /* let us combine row and wrap with flow
+    flex: auto;
   }
   
   .flex-col {
@@ -190,11 +198,58 @@ header {
   span.data {
     font-size: 1.75em;
   }
+  */
+  .column-col {
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    text-align: center;
+    background: radial-gradient(#eee, #bed);
+  }
+ .column-col:hover {
+    opacity: 0.75;
+    background-color: black;
+    color: #9c4d45;
+  }
+  .column {
+    border-right: 1px solid #333;
+  }
+  
+  .col-head {
+    display: block;
+    padding: 1em;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 1.75em;
+    text-align: center;
+  }
+  
+  .col-head,th{
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #6B80BF;
+    color: #000;
+  }
+
+  
+  /* Column styling and layout */
+  .column {
+    column-count: 5;
+    column-gap: 0;
+  }
+  .column-col {
+    background-color: #abe;
+  }
   #monday, #tuesday, #wednesday, #thursday, #friday{
     font-size: 5em;
     color:teal;
-    margin-top: 1em;
-    margin-bottom: 0.25em;
+    padding-top: 1em;
   }
  
   
@@ -216,15 +271,34 @@ header {
       display: block;
       top: 25px;
       right: 50px;
-      background: linear-gradient(350deg, rgba(95,121,254,1) 10%, rgba(142,205,204,1) 35%, rgba(228,240,251,1) 60%);
+      background: radial-gradient(#eee, #4567aa);
       border: 1px solid #000;
       padding: .5rem;
       margin-top:1em;
-      }
+    }
+    .smallweatherText {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
       .weatherText {
         display: none;
       }
       header {
         padding-bottom: 0.5em;
       }
+  }
+  @media only screen and (max-width:365px) {
+    .gmap_canvas{
+      display: none;
+    }
+  }
+  @media only screen and (max-width:600px) {
+    .column {
+      column-count: 1;
+      column-gap: 0;
+    }
+    #monday, #tuesday, #wednesday, #thursday, #friday {
+      display: inline-block;
+      padding-top:0.25em;
+    }
   }
