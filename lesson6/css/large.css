@@ -59,17 +59,17 @@
     position: relative;
   }
   .weatherSummary {
-	position: absolute;
-	top: 6em;
-	left: 3.125em;
-  width: 15rem;
-  height: 15rem;
-  background: radial-gradient(#eee, #4567aa);
-  border: 1px solid #000;
-  border-radius: 0 50% 50% 50%;
-  transform: rotate(45deg);
-	box-shadow: 0 0 20px #111;
-	opacity: .8;
+	  position: absolute;
+	  top: 6em;
+	  left: 3.125em;
+    width: 15rem;
+    height: 15rem;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+	  box-shadow: 0 0 20px #111;
+	  opacity: .8;
   }
 
   .smallweatherSummary {
@@ -108,20 +108,5 @@
   .copywrite {
     padding-top: 1em;
   }
-  
-
- .mapouter {
-   position:relative;
-   text-align:right;
-   height:250px;
-   width:300px;
-   box-shadow: 0 0 20px #808080;
- }
-  .gmap_canvas {
-    background:none!important;
-    height:250px;
-    width:300px;
-    border:5.5em; 
-    margin:0;
-  }
 }
+
