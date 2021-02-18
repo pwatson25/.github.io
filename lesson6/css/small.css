@@ -226,6 +226,119 @@
     padding-top: 1em;
     padding-bottom: 1em;
   }
+/*Footer*/
+  .footer-distributed{
+	  background: #f0a83c;
+	  box-sizing:border-box;
+	  width: 100%;
+	  text-align: left;
+	  font: bold 1em sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+	  display: inline-block;
+  }
+
+/* Footer left */
+  .footer-distributed .footer-left{
+	  width: 40%;
+	  vertical-align: top;
+  }
+
+  .footer-distributed h3{
+	  color:  #212121;
+	  font-family: "Montserrat";
+	  font-size: 1.8em;
+	  font-weight: bold;
+	  margin-right: 11rem;
+  	background: none;
+  }
+
+  /* Footer links */
+  .footer-distributed .footer-links{
+	  color:  #212121;
+	  margin: 1.2em 0 0.8em;
+	  padding: 0;
+  }
+
+  .footer-distributed .footer-links a{
+	  display:inline-block;
+	  line-height: 1.6;
+	  font-weight: bold;
+	  text-decoration: none;
+	  color:  inherit;
+  }
+
+
+
+/* Footer Center */
+  .footer-distributed .footer-center{
+	  width: 30%;
+	  margin-top: 1em;
+  }
+
+  #email, #location, #phone {
+	  padding: 0.2em;
+	  width: 2.5em;
+	  position: relative;
+	  top:1em;
+  }
+
+  #location {
+	  width: 2.75em;
+  }
+
+  .footer-distributed .footer-center p{
+	  display: inline-block;
+	  color: #000;
+  	font-weight:400;
+	  vertical-align: middle;
+	  margin:0;
+  }
+
+  .footer-distributed .footer-center p span{
+	  display:block;
+	  font-weight: normal;
+	  font-size:1em;
+  }
+
+  .footer-distributed .footer-center p a{
+	  color: #1F0DBF;
+	  text-decoration: none;
+	  font-weight: bold;
+  }
+
+  .footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #212121;
+    display: inline-block;
+  }
+
+/* Footer Right */
+  .footer-distributed .footer-right{
+	  width: 25%;
+	  vertical-align: top;
+  }
+
+
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+	  width: 100%;
+	  height: 100%;
+	  cursor: pointer;
+	  line-height: 35px;
+  }
+
+  #facebook, #pinterest, #youtube{
+    padding: 0.2em;
+	  width: 2.5em;
+  }
+
 
   @media only screen and (min-width: 275px) {
   
@@ -250,17 +363,10 @@
       }
   }
   @media only screen and (max-width:365px) {
-    .gmap_canvas{
+    .gmap_canvas {
       display: none;
     }
-  }
-  @media only screen and (max-width:600px) {
-    .column {
-      column-count: 1;
-      column-gap: 0;
-    }
-    #monday, #tuesday, #wednesday, #thursday, #friday {
-      display: inline-block;
-      padding-top:0.25em;
+    .mapouter {
+      display: none;;
     }
   }
