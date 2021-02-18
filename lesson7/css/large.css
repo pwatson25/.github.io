@@ -13,7 +13,7 @@
   .images {
      grid-template-columns: repeat(3, 1fr); 
     }
-  .div.photo:hover {
+  .photo:hover {
     box-shadow: 0 0 20px #111;
   }
 }
