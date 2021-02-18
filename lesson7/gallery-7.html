@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="author" content="Peter Watson">
+    <meta name="description" content="Preston Page">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/lesson7/css/small.css">
+    <link rel="stylesheet" href="/lesson7/css/medium.css">
+    <link rel="stylesheet" href="/lesson7/css/large.css">
+    <link rel="stylesheet" href="/lesson7/css/hamburger.css">
+    <link rel="stylesheet" href="/lesson7/css/footer.css">
+    <link rel="stylesheet" href="/lesson7/css/weather-icons.min.css">
+    
+    <title>Weather Me Now | Peter Watson</title>
+  </head>
+  
+  <body onload="insertannoucement()">
+    <div id="annoucementtext" class=""></div>
+    <header>
+      <img class="logo-box" src="/lesson4/images/weatherworksicon.png" alt="Weather Me Now Logo">
+        <div class="banner">
+          <h1>Weather Me Now</h1>
+          <div class="siteslogan">For The Meteroligist At Heart</div>
+        </div>
+    </header>
+  
+
+    <div class="navbar" id="myNavBar">
+      <a href="/">Portal</a>
+      <a href="#" class="active">Preston Home</a>
+      <a href="../comotia-template/index.html">Soda Springs</a>
+      <a href="../comotia-template/index.html">Fish Haven</a>
+      <a href="../comotia-template/index.html">Storm Centers</a>
+      <a href="../comotia-template/index.html">Gallery</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          &#9776;
+        </a>
+    </div>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://picsum.photos/500/500" style="width:100%">
+    <img src="https://picsum.photos/200/300" style="width:100%">
+    <img src="https://picsum.photos/500/700" style="width:100%">
+    <img src="https://picsum.photos/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="https://picsum.photos/550/680" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+    <img src="http://placekitten.com/g/200/300" style="width:100%">
+  </div>
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+      
+      <div class="copywrite">
+        &copy; <span id="currentYear"></span> | Peter Watson | Germany | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        Last Updated: <span id="lastUpdate"></span>
+        </div>
+
+    </div>
+    </div> 
+
+    <script src="/lesson3/javascript/currentYear.js"></script>
+    <script src="/lesson3/javascript/lastUpdate.js"></script>
+    <script src="/lesson5/javascript/main.js"></script>
+    <script src="/lesson6/javascript/windChill.js"></script>
+
+  </body>
+</html>  

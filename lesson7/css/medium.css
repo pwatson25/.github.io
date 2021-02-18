@@ -13,13 +13,3 @@
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 }
-@media only screen and (max-width:600px) {
-  .column {
-    column-count: 1;
-    column-gap: 0;
-  }
-  #monday, #tuesday, #wednesday, #thursday, #friday {
-    display: inline-block;
-    padding-top:0.25em;
-  }
-}

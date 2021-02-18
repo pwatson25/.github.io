@@ -1,66 +1,11 @@
 @media only screen and (min-width: 1008px) {
 	main {
-    max-width: 1920px;
-    padding: 2.5em;
-    margin-left:10rem;
-    margin-right:10rem;
-    margin-top:1em;
-    padding-bottom: 0;
-  }
-}
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-	.footer-distributed h3{
-	margin: auto 0;
-	}
-	.mapouter {
-		position:relative;
-		margin: auto; 
-	}
-}
-
-@media screen and (max-width: 770px) {
-  .navbar a:not(:first-child), .subnav .subnavbtn {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .navbar.responsive .subnav {float: none;}
-  .navbar.responsive .subnav-content {position: relative;}
-  .navbar.responsive .subnav .subnavbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
+        max-width: 1920px;
+        padding: 2.5em;
+        margin-left:10rem;
+        margin-right:10rem;
+        margin-top:1em;
+        padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 768px) {
