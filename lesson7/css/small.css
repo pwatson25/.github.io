@@ -100,34 +100,6 @@
     background-color: #F4F1DE;
     padding: 1em;
   }
-  main figure.articlephoto {
-    width:100%;
-    margin: auto;
-    display: block;
-  }
-  main figure.articlephoto img {
-    width: 100%;
-  }
-  main figure.articlephoto figcaption {
-   text-align: center;
-   font-size:0.75rem;
-  }
-  picture.heroImage {
-    display: block;
-  }
-  main picture.heroImage img {
-    width: 100%;
-  }
-  .weatherSummary h2 {
-    opacity: 100%;
-    font-size: 1.75em;
-    font-weight: bold;
-  }
-  .weatherSummary p {
-    opacity: 100%;
-    font-size: 1em;
-    font-weight: bold;
-  }
   p {
     font-size: 1em;
     color:	#3D405B;
@@ -147,73 +119,24 @@
   #annoucementtext.notfriday {
     display: none;
   }
-
-  .column-col {
-    border-bottom: 1px solid #333;
-    border-left: 1px solid #333;
+  .images {
+    display: grid;
+    grid-gap: 1rem;
+  }
+  div.photo {
+    float: right;
+    width: 100%;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
     text-align: center;
-    background: radial-gradient(#eee, #bed);
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
   }
- .column-col:hover {
-    opacity: 0.75;
-    background-color: black;
-    color: #9c4d45;
+  img.scaled {
+    width: 100%;
   }
-  .column {
-    border-right: 1px solid #333;
-  }
-  
-  .col-head {
-    display: block;
-    padding: 1em;
-    border-bottom: 1px solid #333;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: bold;
-  }
-  
-  .data {
-    display: block;
-    padding: 0 5px 5px;
-    font-size: 1.75em;
-    text-align: center;
-  }
-  
-  .col-head,th{
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: #6B80BF;
-    color: #000;
-  }
-
-  .column {
-    column-count: 5;
-    column-gap: 0;
-  }
-  .column-col {
-    background-color: #abe;
-  }
-  #monday, #tuesday, #wednesday, #thursday, #friday{
-    font-size: 5em;
-    color:teal;
-    padding-top: 1em;
-  }
- 
-  .mapouter {
-    position:relative;
-    text-align:right;
-    height:250px;
-    width:300px;
-    box-shadow: 0 0 20px #808080;
-  }
- 
-   #gmap_canvas {
-    width: 300px;
-    height:250px;
-    background:none!important;
-    border:5.5em; 
-    margin:0;
-   }
 
   footer {
     background-color: #f0a83c;
@@ -225,42 +148,4 @@
   .copywrite {
     padding-top: 1em;
     padding-bottom: 1em;
-  }
-
-  @media only screen and (min-width: 275px) {
-  
-    .smallweatherSummary {
-      display: block;
-      top: 25px;
-      right: 50px;
-      background: radial-gradient(#eee, #4567aa);
-      border: 1px solid #000;
-      padding: .5rem;
-      margin-top:1em;
-    }
-    .smallweatherText {
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-      .weatherText {
-        display: none;
-      }
-      header {
-        padding-bottom: 0.5em;
-      }
-  }
-  @media only screen and (max-width:365px) {
-    .gmap_canvas{
-      display: none;
-    }
-  }
-  @media only screen and (max-width:600px) {
-    .column {
-      column-count: 1;
-      column-gap: 0;
-    }
-    #monday, #tuesday, #wednesday, #thursday, #friday {
-      display: inline-block;
-      padding-top:0.25em;
-    }
   }

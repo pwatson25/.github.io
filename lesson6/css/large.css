@@ -83,6 +83,9 @@
     padding: 15px;
     background-color: #6B80BF;
   }
+  .col-4, .col-4.col-s-6 {
+    background-color: #F4F1DE;
+  }
   #annoucementtext{
     position: absolute;
     margin-left: 75%;

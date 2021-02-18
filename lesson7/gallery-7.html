@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="/lesson7/css/small.css">
     <link rel="stylesheet" href="/lesson7/css/medium.css">
     <link rel="stylesheet" href="/lesson7/css/large.css">
-    <link rel="stylesheet" href="/lesson7/css/hamburger.css">
-    <link rel="stylesheet" href="/lesson7/css/footer.css">
-    <link rel="stylesheet" href="/lesson7/css/weather-icons.min.css">
+
     
     <title>Weather Me Now | Peter Watson</title>
   </head>
@@ -40,109 +38,29 @@
           &#9776;
         </a>
     </div>
-
-<!-- Header -->
-<div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
-
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="https://picsum.photos/500/500" style="width:100%">
-    <img src="https://picsum.photos/200/300" style="width:100%">
-    <img src="https://picsum.photos/500/700" style="width:100%">
-    <img src="https://picsum.photos/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="https://picsum.photos/550/680" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-  </div>  
-  <div class="column">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-    <img src="http://placekitten.com/g/200/300" style="width:100%">
-  </div>
-</div>
-<style>
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
-      
+    <div class="row">
+      <div class="col-12 col-s-12">
+        <main>
+          <div class="images">
+            <div class="photo"><img class="scaled" src="/lesson7/images/flood_street.png" alt="flooded street"><p>A flooded street makes it impossible to drive</p></div>
+            <div class="photo"><img class="scaled" src="/lesson7/images/huge_lightning.png" alt="big lighting"><p>A huge bolt of lightining captured in the night sky</p></div>
+            <div class="photo"><img class="scaled" src="/lesson7/images/hurricane_eye.png" alt="hurricane eye"><p>The eye of a hurricane visable from space</p></div>
+            <div class="photo"><img class="scaled" src="/lesson7/images/hurricane_two.png" alt="two hurricans"><p>Two hurricans about to make landfall</p></div>
+            <div class="photo"><img class="scaled" src="/lesson7/images/flooded.png" alt="flooded town"><p>A soggy day means no buisness</p></div>
+            <div class="photo"><img class="scaled" src="/lesson7/images/flooded_street_motercycle.jpg" alt="flooded motercycle"><p>The floaded street makes the streets difficult to navigate</p></div>
+            <div class="photo"><img class="scaled" src="/lesson7/images/purple_lightning.png" alt="purpe lightning"><p>Amazing lightning visable throught the rain</p></div>
+            <div class="photo"><img class="scaled" src="/lesson7/images/rain_single_lighting.png" alt="lightning and rain"><p>Throught the rain, a single bolt of lightning strikes</p></div>
+            <div class="photo"><img class="scaled" src="/lesson7/images/twister.png" alt="twister"><p>A masive tornado touches down</p></div>
+          </div>
+        </main>
+      </div>
+    </div> 
+    <footer>
       <div class="copywrite">
         &copy; <span id="currentYear"></span> | Peter Watson | Germany | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
         Last Updated: <span id="lastUpdate"></span>
-        </div>
-
-    </div>
-    </div> 
-
+      </div>
+      </footer>
     <script src="/lesson3/javascript/currentYear.js"></script>
     <script src="/lesson3/javascript/lastUpdate.js"></script>
     <script src="/lesson5/javascript/main.js"></script>
