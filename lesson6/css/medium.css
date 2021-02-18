@@ -19,7 +19,6 @@
     column-gap: 0;
   }
   #monday, #tuesday, #wednesday, #thursday, #friday {
-    display: inline-block;
-    padding-top:0.25em;
-  }
+  display: block;
+}
 }
