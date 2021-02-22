@@ -1,151 +1,155 @@
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
-    background-color: #F4F1DE;
-  }
-  .navbar {
-    overflow: hidden;
-    background-color: #9c4d45; 
-  }
-  
-  .navbar a {
-    float: left;
-    display: block;
-    font-size: 1.1em;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .navbar a.active {
-    background: #3F598C; 
-    color: white;
-    font-weight: bold;
-  }
-  .navbar a:hover {
-    background-color: #3F598C;
-  }
-  
-  .navbar .icon {
-    display: none;
-  }
-  
-  header {
-    background-color: #f0a83c;
-    padding: 1px;
-    font-weight: bold;  
-  }
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  background-color: #f4f1de;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #9c4d45;
+}
 
-  .logo-box {
-    float: left;
-    height: 6rem;
-    width: auto;
-    margin-left: 1em;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    border-radius: 1em;
-  }
-  
-  #logo {
-    width: 200px;
-  
-  }
-  .banner {
-    display: flex;
-    flex-direction: column;
-    color: #212121;
-  }
-    
-  .banner h1 {
-    position: relative;
-    padding: 10px;
-    padding-left: 0.75em;
-    text-align: left;
-    font-size: 1.8em;
-    margin-bottom: 0px;
-  }
-  
-  .siteslogan {
-    font-style: italic;
-    font-size: 1em;
-    letter-spacing: 1pt;
-    padding-bottom: 10px;
-    padding-left: 1.3em;
-  }
+.navbar a {
+  float: left;
+  display: block;
+  font-size: 1.1em;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  h2, h3 {
-    font-family: 'Roboto Condensed', sans-serif;
-  }
-  
-  h2 {
-    font-size: 1.4em;
-    color: #9c4d45;
-    line-height: 0.5em;
-  }
+.navbar a.active {
+  background: #3f598c;
+  color: white;
+  font-weight: bold;
+}
+.navbar a:hover {
+  background-color: #3f598c;
+}
 
-  h3 {
-    font-size: 1.3em;
-  }
-  
-  main {
-    background-color: #F4F1DE;
-    padding: 1em;
-  }
-  p {
-    font-size: 1em;
-    color:	#3D405B;
-  }
+.navbar .icon {
+  display: none;
+}
 
-  li {
-    color:	#3D405B;
-  }
-  #annoucementtext {
-    margin:auto;
-    background-color: yellow;
-    font-size: 1em;
-    padding-top:0.6em;
-    padding-bottom: 0.5em;
-    text-align: center;
-  }
-  #annoucementtext.notfriday {
-    display: none;
-  }
-  .images {
-    display: grid;
-    grid-gap: 1rem;
-  }
-  div.photo {
-    float: right;
-    width: 100%;
-    border: thin silver solid;
-    margin: 0.5em;
-    padding: 0.5em;
-    text-align: center;
-    font-style: italic;
-    font-size: smaller;
-    text-indent: 0;
-  }
-  img.scaled {
-    width: 100%;
-  }
+header {
+  background-color: #f0a83c;
+  padding: 1px;
+  font-weight: bold;
+}
 
-  footer {
-    background-color: #f0a83c;
-    color: #F8F6EB;
-    font-size: 1em;
-    text-align: center;
-    padding: 1rem;
-  }
-  .copywrite {
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
+.logo-box {
+  float: left;
+  height: 6rem;
+  width: auto;
+  margin-left: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  border-radius: 1em;
+}
+
+#logo {
+  width: 200px;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  color: #212121;
+}
+
+.banner h1 {
+  position: relative;
+  padding: 10px;
+  padding-left: 0.75em;
+  text-align: left;
+  font-size: 1.8em;
+  margin-bottom: 0px;
+}
+
+.siteslogan {
+  font-style: italic;
+  font-size: 1em;
+  letter-spacing: 1pt;
+  padding-bottom: 10px;
+  padding-left: 1.3em;
+}
+
+h2,
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h2 {
+  font-size: 1.4em;
+  color: #9c4d45;
+  line-height: 0.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+main {
+  background-color: #f4f1de;
+  padding: 1em;
+}
+p {
+  font-size: 1em;
+  color: #3d405b;
+}
+
+li {
+  color: #3d405b;
+}
+#annoucementtext {
+  margin: auto;
+  background-color: yellow;
+  font-size: 1em;
+  padding-top: 0.6em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+#annoucementtext.notfriday {
+  display: none;
+}
+.images {
+  display: grid;
+  grid-gap: 1rem;
+}
+div.photo {
+  float: right;
+  width: 100%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+img.scaled {
+  width: 100%;
+}
+
+footer {
+  background-color: #f0a83c;
+  color: #f8f6eb;
+  font-size: 1em;
+  text-align: center;
+  padding: 1rem;
+}
+.copywrite {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+}
