@@ -11,3 +11,6 @@ img {
   max-width: 100%;
   height: auto;
 }
+img[data-src] {
+  filter: blur(0.5em);
+}
