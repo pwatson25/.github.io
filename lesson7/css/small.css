@@ -142,8 +142,10 @@ footer {
   background-color: #f0a83c;
   color: #f8f6eb;
   font-size: 1em;
-  text-align: center;
-  padding: 1rem;
+  padding: 0.2rem;
+  align-content: center;
+  justify-content: center;
+  display: flex;
 }
 .copywrite {
   padding-top: 1em;
