@@ -43,9 +43,6 @@ header {
   background-color: #f0a83c;
   padding: 1px;
   font-weight: bold;
-  justify-content: center;
-  align-content: center;
-  display: flex;
 }
 
 .logo-box {
@@ -71,7 +68,7 @@ header {
   position: relative;
   padding: 10px;
   padding-left: 0.75em;
-
+  text-align: left;
   font-size: 1.8em;
   margin-bottom: 0px;
 }
