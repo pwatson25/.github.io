@@ -27,9 +27,3 @@ function myFunction() {
         x.className = "navbar";
       }
   }
-
-  WebFont.load({
-    google: {
-      families: ['Roboto', 'Oswald']
-    }
-  });
