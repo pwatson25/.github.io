@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="author" content="Peter Watson">
     <meta name="description" content="Preston Page">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/lesson6 copy/css/small.css">
     <link rel="stylesheet" href="/lesson6 copy/medium.css">
     <link rel="stylesheet" href="/lesson6 copy/css/large.css">
@@ -17,7 +16,9 @@
   <body onload="insertannoucement()">
     <div id="annoucementtext" class=""></div>
     <header>
-      <img class="logo-box" src="/lesson4/images/weatherworksicon.png" alt="Weather Me Now Logo">
+      <picture> 
+        <img src="/lesson4/images/weatherworksicon.webp" alt="Weather Me Now Logo">
+      </picture>
         <div class="banner">
           <h1>Weather Me Now</h1>
           <div class="siteslogan">For The Meteroligist At Heart</div>
@@ -60,33 +61,35 @@
             </section>
           </div>          
           <h2>5 Day Forecast</h2>
-          <div class="column">
-            <div class="column-col">
-              <span class="col-head">Monday</span>
-              <section id="monday"><img src="images/cloudy.png" alt="cloudy"></section>
-              <span class="data">37 °F</span>
-            </div>
-          <div class="column-col">
-            <span class="col-head">Tuesday</span>
-            <section id="tuesday"><img src="images/clouds-and-sun.png" alt="clouds and sun"></section>
-            <span class="data">35 °F</span>
-          </div>
-          <div class="column-col">
-            <span class="col-head">Wednesday</span>
-            <section id="wednesday"><img src="images/rain.png" alt="rain"></section>
-            <span class="data">32 °F</span>
-            </div>
-            <div class="column-col">
-              <span class="col-head">Thursday</span>
-              <section id="thursday"><img src="images/storm.png" alt="storm"></section>
-              <span class="data">0 °F</span>
-            </div>
-          <div class="column-col">
-            <span class="col-head">Friday</span>
-            <section id="friday"><img src="images/clouds-and-sun.png" alt="clouds and sun"></section>
-            <span class="data">37.5 °F</span>
-          </div>
-          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="/lesson6/images/cloudy.webp" alt="cloudy"></td>
+                <td><img src="/lesson6/images/clouds-and-sun.webp" alt="clouds and sun"></td>
+                <td><img src="/lesson6/images/rain.webp" alt="rain"></td>
+                <td><img src="/lesson6/images/storm.webp" alt="storm"></td>
+                <td><img src="/lesson6/images/clouds-and-sun.webp" alt="clouds and sun"></td>
+              </tr>
+              <tr>
+                <td>37 °F</td>
+                <td>35 °F</td>
+                <td>32 °F</td>
+                <td>32 °F</td>
+                <td>37.5 °F</td>
+              </tr>
+
+            <tbody>
+          </table>
+
           <p style="clear:right"></p>
           <div class="article">
             <h2>Article</h2>
@@ -96,7 +99,81 @@
             </figure>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum tortor venenatis fermentum. Aenean nisl neque, dignissim a ligula ut, fermentum vehicula ligula. Duis quis risus at neque malesuada posuere. Sed maximus urna ac vulputate iaculis. Nam ut mattis sem. Praesent hendrerit ultrices mauris, ac sagittis ipsum rutrum sit amet. Nullam in purus turpis. Donec convallis quam purus, at suscipit neque posuere et. Ut commodo maximus massa non rutrum. Vestibulum ex lorem, lacinia sit amet sem quis, lacinia rhoncus enim. Aliquam consectetur rutrum arcu, id egestas nulla lobortis et. Maecenas turpis sapien, rhoncus vitae euismod in, vehicula eu velit. Pellentesque vitae diam in ligula accumsan dictum.</p>
             </div>
+            <section class="footer-distributed">
+              <div class="footer-left">
+              <h3>
+              Peter J Watson
+              </h3>
+      
+            <p class="footer-links">
+              <a href="/lesson3/site-planning/target-audience.html">Target Audience</a> |
+              <a href="/lesson3/site-planning/color-scheme.html">Color Scheme</a> |
+              <a href="/lesson3/site-planning/typography.html">Typography</a>
+            </p>
+            <div class="footer-icons">
+              <a
+                href="#"
+                target="_blank"
+              >
+                <img
+                  src="/lesson4/images/facebook.png"
+                  id="facebook"
+                  alt="Facebook icon"
+              /></a>
+              <a
+                href="#"
+                target="_blank"
+              >
+                <img
+                  src="/lesson4/images/pinterest.png"
+                  id="pinterest"
+                  alt="Pinterest icon"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  src="/lesson4/images/youtube.png"
+                  id="youtube"
+                  alt="Youtube icon"
+                />
+              </a>
+          </div>
+      
+          </div>
+      
+          <div class="footer-center">
+              <div>
+              <img src="/lesson4/images/location.png" alt="location icon" id="location">
+              <p><span>CMR 402 Box 128</span> APO AE</p>
+            </div>
+          <br>
+            <div>
+              <img src="/lesson4/images/phone.png" alt="phone icon" id="phone">
+              <p>+49 151/659145916</p>
+            </div>
+          <br>
+            <div>
+              <img src="/lesson4/images/gmail.png" alt="email icon" id="email">
+              <p>
+                <a href="mailto:peter@villagelanepublishing.com"
+                  >peter@peterjwatson.com</a
+                >
+              </p>
+            </div>
+          </div>
+      
+          <div class="footer-right">
+            <div class="footer-company-about">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=preston,%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
         </main>
+
         <footer>
           <div class="copywrite">
           &copy; <span id="currentYear"></span> | Peter Watson | Germany | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
@@ -106,17 +183,10 @@
     </div>
     </div> 
 
-    <script src="/lesson3/javascript/currentYear.js"></script>
-    <script src="/lesson3/javascript/lastUpdate.js"></script>
-    <script src="/lesson5/javascript/main.js"></script>
-    <script src="/lesson6/javascript/windChill.js"></script>
+    <script src="/lesson6 copy/javascript/main.js"></script>
+    <script src="/lesson6 copy/javascript/table.js"></script>
+    <script src="/lesson6 copy/javascript/weather.js"></script>
+    <script src="/lesson6 copy/javascript/windChill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-  WebFont.load({
-    google: {
-      families: ['Roboto', 'Oswald']
-    }
-  });
-</script>
   </body>
 </html>  

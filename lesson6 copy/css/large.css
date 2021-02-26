@@ -5,26 +5,7 @@
     margin: 1em 10rem;
   }
 }
-@media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
-  }
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  .footer-distributed h3 {
-    margin: auto 0;
-  }
-  .mapouter {
-    position: relative;
-    margin: auto;
-  }
-}
+
 @media screen and (max-width: 770px) {
   .navbar a:not(:first-child) {
     display: none;
@@ -78,7 +59,7 @@
   }
   .col-4,
   .col-4.col-s-6 {
-    background-color: #f4f1de;
+    background-color: #f0a83c;
   }
   #annoucementtext {
     position: absolute;
@@ -89,12 +70,6 @@
     padding-top: 0.6em;
     padding-bottom: 0.5em;
     text-align: center;
-  }
-  .banner {
-    margin-bottom: 0.3em;
-  }
-  .header {
-    margin-top: 0.3em;
   }
   .navbar {
     margin: 0;
@@ -115,9 +90,6 @@
   }
   .article {
     padding-bottom: 1em;
-  }
-  .footer-icons {
-    display: inline-flex;
   }
   .copywrite {
     padding-top: 1em;
