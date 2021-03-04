@@ -7,7 +7,6 @@
     <meta name="description" content="Preston Page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/lesson6/css/small.css">
-    <link rel="stylesheet" href="/lesson6/css/medium.css">
     <link rel="stylesheet" href="/lesson6/css/large.css">
     
     <title>Weather Me Now | Peter Watson</title>
@@ -24,23 +23,20 @@
           <div class="siteslogan">For The Meteroligist At Heart</div>
         </div>
     </header>
-  
 
-    <div class="navbar" id="myNavBar">
-      <a href="/">Home</a>
+    <nav>
+      <ul class="nav-bar">
+      <li><a href="#" onclick="toggleHam()">&#9776; Menu</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="#" class="active">Preston</a></li>
+      <li><a href="../comotia-template/index.html">Soda Springs</a></li>
+      <li><a href="../comotia-template/index.html">Fish Haven</a></li>
+      <li><a href="../comotia-template/index.html">Storm Centers</a></li>
+      <li><a href="../comotia-template/index.html">Gallery</a></li>
+    </ul>
+    </nav>
 
-      <a href="#" class="active">Preston</a>
-      <a href="../comotia-template/index.html">Soda Springs</a>
-      <a href="../comotia-template/index.html">Fish Haven</a>
-      <a href="../comotia-template/index.html">Storm Centers</a>
-      <a href="../comotia-template/index.html">Gallery</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        &#9776;
-      </a>
-    </div>
 
-    <div class="row">
-      <div class="col-12 col-s-12">
         <main>
           <div class="herodiv">   
             <h2>Preston Idaho</h2>
@@ -180,12 +176,13 @@
           Last Updated: <span id="lastUpdate"></span>
           </div>
         </footer>
-    </div>
-    </div> 
 
-    <script src="/lesson6 copy/javascript/main.js"></script>
-    <script src="/lesson6 copy/javascript/table.js"></script>
-    <script src="/lesson6 copy/javascript/weather.js"></script>
+
+
+    <script src="/lesson6/javascript/main.js"></script>
+    <script src="/lesson6/javascript/table.js"></script>
+    <script src="/lesson6/javascript/currentYear.js"></script>
+    <script src="/lesson6/javascript/lastUpdate.js"></script>
     <script src="/lesson6 copy/javascript/windChill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   </body>
