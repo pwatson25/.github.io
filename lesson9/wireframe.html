@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="author" content="Peter Watson">
+    <meta name="description" content="Wireframe Page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    
+    <title>Wireframes | Peter Watson</title>
+  </head>
+  
+  <body onload="insertannoucement()">
+    <div id="annoucementtext" class=""></div>
+    <header>
+      <picture> 
+        <img src="/lesson4/images/weatherworksicon.webp" alt="Weather Me Now Logo">
+      </picture>
+        <div class="banner">
+          <h1>Weather Me Now</h1>
+          <div class="siteslogan">For The Meteroligist At Heart</div>
+        </div>
+    </header>
+
+    <nav>
+      <ul class="nav-bar">
+      <li><a href="#" onclick="toggleHam()">&#9776; Menu</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="#" class="active">Preston</a></li>
+      <li><a href="../comotia-template/index.html">Soda Springs</a></li>
+      <li><a href="../comotia-template/index.html">Fish Haven</a></li>
+      <li><a href="../comotia-template/index.html">Storm Centers</a></li>
+      <li><a href="../comotia-template/index.html">Gallery</a></li>
+    </ul>
+    </nav>
+
+
+        <main>
+            <div class="wireframe">
+                <div class="column">
+                <h2>Large View</h2>
+                <img src="images/Wireframe Large View.png" alt="wireframe large" id="wireframe-large">
+                </div>
+                <div class="column">
+                <h2>Medium View</h2>
+                <img src="images/Wireframe Medium View.png" alt="wireframe large" id="wireframe-medium">
+                </div>
+                <div class="column">
+                <h2>Small View</h2>
+                <img src="images/Wireframe Small View.png" alt="wireframe large" id="wireframe-small">
+                </div>
+            </div>
+        </main>
+        <footer>
+          <div class="copywrite">
+          &copy; <span id="currentYear"></span> | Peter Watson | Germany | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+          Last Updated: <span id="lastUpdate"></span>
+          </div>
+        </footer>
+
+
+
+    <script src="/lesson6/javascript/main.js"></script>
+    <script src="/lesson6/javascript/table.js"></script>
+    <script src="/lesson6/javascript/currentYear.js"></script>
+    <script src="/lesson6/javascript/lastUpdate.js"></script>
+    <script src="/lesson6 copy/javascript/windChill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
+</html>  
