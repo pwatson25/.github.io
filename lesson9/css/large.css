@@ -8,16 +8,6 @@ body {
     margin: 0.75em 8rem;
   }
 
-  #annoucementtext {
-    position: absolute;
-    margin-left: 75%;
-    background-color: #ff0;
-    font-size: 1em;
-    width: 25%;
-    padding-top: 0.6em;
-    padding-bottom: 0.5em;
-    text-align: center;
-  }
   .copywrite {
     padding-top: 1em;
   }

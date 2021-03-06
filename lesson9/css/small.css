@@ -3,54 +3,6 @@ body {
 
   background-color: #f4f1de;
 }
-
-nav {
-  background-color: #9c4d45;
-  width: 100%;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #f4f1de;
-}
-
-nav li {
-  display: none;
-}
-
-.nav-bar .active {
-  background: #3f598c;
-  color: white;
-  font-weight: bold;
-}
-
-nav a {
-  display: block;
-  padding: 0.75rem;
-  text-align: center;
-  text-decoration: none;
-  color: #3d405b;
-  font-weight: bold;
-  font-size: 1.1em;
-  color: white;
-  text-align: center;
-}
-
-nav a:hover {
-  background-color: #3f598c;
-}
-
-.nav-bar {
-  list-style: none;
-  text-align: center;
-}
-
-.nav-bar li:first-child {
-  display: block;
-}
-
-.responsive li {
-  display: block;
-}
 header {
   background-color: #f0a83c;
   padding: 1em;
