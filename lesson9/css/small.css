@@ -63,7 +63,7 @@ main {
 }
 .town {
   flex: 33.33%;
-  padding: 2em;
+  padding: 5px 2em 0em;
   margin-right: 2em;
 }
 .town img {
