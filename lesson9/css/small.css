@@ -58,7 +58,22 @@ main {
 #wireframe-small {
   width: 13em;
 }
-
+.row {
+  display: flex;
+}
+.town {
+  flex: 33.33%;
+  padding: 2em;
+  margin-right: 2em;
+}
+.town img {
+  max-width: auto;
+  height: 25vh;
+}
+.row section {
+  border: 2px solid black;
+  border-radius: 10px;
+}
 footer {
   background-color: #f0a83c;
   color: #000;
