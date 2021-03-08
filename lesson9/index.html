@@ -7,6 +7,7 @@
     <meta name="description" content="Wireframe Page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 
     
@@ -27,39 +28,42 @@
 
 
         <main>
-          <header>
-            <h3>Welcome</h1>
+          <header class="welcome">
+            <h3>Welcome</h3>
           </header>
-            <div class="row">
-            <section class="town">
-            <h2>Preston</h2>
-            <em id="motto"></em>
-              <hr>
+            <div class="towns">
+            <section>
+            <img src="images/Preston.png" alt="Preston">
+              <div class="data">
+              <h2>Preston</h2>
+              <h4 id="motto"></h4>
               Year Founded: <span id="yearFounded"></span><br>
               Population: <span id="population"></span><br>
               Avg. Rainfall: <span id="rainfall"></span> in<sup>2</sup>
-              <hr>
-              <img src="images/Preston.png" alt="Preston">
+              </div>
+              
             </section>
-            <section class="town">
-            <h2>Soda Springs</h2>
-            <em id="motto2"></em>
-              <hr>
+            <section>
+            <img src="images/Soda_Springs.png" alt="Soda Springs">
+            <div class="data">
+              <h2>Soda Springs</h2>
+              <h4 id="motto2"></h4>
               Year Founded: <span id="yearFounded2"></span><br>
               Population: <span id="population2"></span><br>
               Avg. Rainfall: <span id="rainfall2"></span> in<sup>2</sup>
-              <hr>
-              <img src="images/Soda_Springs.png" alt="Soda Springs">
+            </div>
+              
             </section>
-            <section class="town">
+            <section>
+            <img src="images/Fish_Haven.png" alt="Fish Haven">
+            <div class="data">
             <h2>Fish Haven</h2>
-            <em id="motto3"></em>
-              <hr>
+            <h4 id="motto3"></h4>
               Year Founded: <span id="yearFounded3"></span><br>
               Population: <span id="population3"></span><br>
               Avg. Rainfall: <span id="rainfall3"></span> in<sup>2</sup>
-              <hr>
-              <img src="images/Fish_Haven.png" alt="Fish Haven">
+              </div>
+              
             </section>
           </div>
         </main>

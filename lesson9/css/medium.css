@@ -1,0 +1,18 @@
+@media only screen and (min-width: 700px) {
+  body {
+    margin: 0 auto;
+  }
+
+  .towns section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+  }
+  .towns section:nth-child(odd) img {
+    grid-column: 2;
+  }
+  .towns section:nth-child(odd) .data {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
