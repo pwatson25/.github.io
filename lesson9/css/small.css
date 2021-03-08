@@ -5,11 +5,21 @@ body {
 }
 header {
   background-color: #f0a83c;
-  padding: 1em;
+  padding: 0.5em;
   font-weight: 700;
   display: flex;
   align-content: center;
   justify-content: center;
+}
+header.welcome {
+  display: block;
+  text-align: center;
+}
+header .subhead {
+  font-style: italic;
+  font-size: 1em;
+  letter-spacing: 1pt;
+  padding-left: 1.3em;
 }
 
 picture img {
@@ -35,33 +45,33 @@ h2 {
   font-size: 1.4em;
   color: #9c4d45;
 }
-header.welcome {
-  margin-bottom: 1em;
-}
+
 .towns {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-
   color: #3d405b;
   font-size: 1em;
 }
 
 .towns section {
-  margin: auto;
   border: 2px solid #3d405b;
   border-radius: 10px;
   background-color: white;
-  padding: 1em;
+  padding: 0.55em;
 }
 
 .towns section img {
   border-radius: 5px;
   width: 80%;
   height: auto;
-  padding: 10px;
   filter: blur(0em);
   transition: filter 1s;
+}
+#motto,
+#motto2,
+#motto3 {
+  font-style: italic;
 }
 
 main {
