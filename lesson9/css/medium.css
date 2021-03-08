@@ -2,6 +2,25 @@
   body {
     margin: 0 auto;
   }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navbar a {
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  .navbar li:first-child {
+    display: none;
+  }
 
   .towns section {
     display: grid;

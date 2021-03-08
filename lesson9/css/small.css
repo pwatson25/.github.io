@@ -11,6 +11,50 @@ header {
   align-content: center;
   justify-content: center;
 }
+nav {
+  background-color: #9c4d45;
+  text-align: center;
+  border-bottom: none;
+}
+
+.navbar {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: none;
+}
+
+.navbar li:first-child {
+  display: block;
+}
+
+.responsive li {
+  display: block;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem;
+  text-decoration: none;
+  text-align: left;
+}
+
+.navbar a:hover {
+  background-color: #3f598c;
+}
+
+.navbar .active {
+  background: #3f598c;
+  color: white;
+  font-weight: bold;
+}
+
 header.welcome {
   display: block;
   text-align: center;
