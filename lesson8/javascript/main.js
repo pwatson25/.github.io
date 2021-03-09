@@ -1,5 +1,10 @@
-function toggleHam() {
-  document.getElementsByClassName('nav-bar')[0].classList.toggle('responsive');
+let navlinks = document.querySelectorAll(".navbar a");
+let currentURL= window.location.href;
+
+for (let i = 0; i < navlinks.length; i++) {
+    if (navlinks[i]==currentURL) {
+        navlinks[i].classList.add('active')
+    }
 }
 
 function insertannoucement() {
@@ -14,10 +19,26 @@ function insertannoucement() {
     }
 }
 
+function myFunction() {
+    var x = document.getElementById("myNavBar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+  }
 
+const hambutton = document.querySelector('.hamburger');
+const navbar = document.querySelector('.navbar')
 
-  WebFont.load({
-    google: {
-      families: ['Roboto', 'Oswald']
-    }
-  });
+hambutton.addEventListener('click', () => {
+    navbar.classList.toggle('responsive')
+}, false);
+
+// To solve the mid resizing issue with responsive class on
+window.onresize = () => {
+    if (window.innerWidth > 760) navbar.classList.remove('responsive')
+};
+function adjustSeverity(rating) {
+    document.getElementById("rating-value").innerHTML = rating;
+}
