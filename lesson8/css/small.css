@@ -93,7 +93,18 @@ h2 {
 main {
   background-color: #f4f1de;
 }
-
+h1.thanks {
+  text-align: center;
+  font-size: 3em;
+  color: #9c4d45;
+}
+p.main {
+  text-align: center;
+  font-size: 1.5em;
+}
+span.danger {
+  color: crimson;
+}
 footer {
   background-color: #f0a83c;
   color: #000;
