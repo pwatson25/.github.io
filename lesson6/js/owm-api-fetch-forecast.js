@@ -41,7 +41,6 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?&id=5604473&units=imperi
 
         for (let i = 1; i <= 5; i++) {
             document.getElementById('forecastday' + i).innerHTML = tempforecast[i];
-            document.getElementById('imagesrc'+ i).src = "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
         }
     });
  

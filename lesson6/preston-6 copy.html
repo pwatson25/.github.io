@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="author" content="Peter Watson">
+    <meta name="description" content="Preston Page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    
+    <title>Weather Me Now | Peter Watson</title>
+  </head>
+  
+  <body onload="insertannoucement()">
+    <div id="annoucementtext" class=""></div>
+    <header>
+      <picture> 
+        <img src="/lesson4/images/weatherworksicon.webp" alt="Weather Me Now Logo">
+      </picture>
+        <div class="banner">
+          <h1>Weather Me Now</h1>
+          <div class="siteslogan">For The Meteroligist At Heart</div>
+        </div>
+    </header>
+
+    <nav>
+      <ul class="navbar" id="myNavBar">
+        <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="/lesson6/preston-6.html">Preston</a></li>
+        <li><a href="../comotia-template/index.html">Soda Springs</a></li>
+        <li><a href="../comotia-template/index.html">Fish Haven</a></li>
+        <li><a href="../comotia-template/index.html">Storm Center</a></li>
+        <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+      </ul>
+      </nav>
+
+
+        <main>
+          <div class="herodiv">   
+            <h2>Preston Idaho</h2>
+            <picture class="heroImage">
+              <source media="(max-width: 400px)" srcset="images/hero_Small_Compressed.png">
+              <source media="(max-width: 769px)" srcset="images/hero_Medium_Compressed.png">
+              <source media="(max-width: 1200px)" srcset="images/hero_Large_Compressed.png">
+              <img src="/lesson6/images/hero_Standard_Compressed.png" alt="heroimage" id="hero">
+            </picture>
+            <section class="weatherSummary">
+              <section class="weatherText">
+                <h2>Today's Weather</h2>
+                <p>Currently: <span id="currently"></span></p>
+                <p>Temperature: <span id="current-temp"></span>&#176; F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Precipitation: 0 inches</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+              </section>
+            </section>
+          </div>          
+          <h2>5 Day Forecast</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span id="imagesrc"></td>
+                <td><img src="/lesson6/images/clouds-and-sun.webp" alt="clouds and sun"></td>
+                <td><img src="/lesson6/images/rain.webp" alt="rain"></td>
+                <td><img src="/lesson6/images/storm.webp" alt="storm"></td>
+                <td><img src="/lesson6/images/clouds-and-sun.webp" alt="clouds and sun"></td>
+              </tr>
+              <tr>
+                <td><p id="forecastday1"></p></td>
+                <td><p id="forecastday2"></p></td>
+                <td><p id="forecastday3"></p></td>
+                <td><p id="forecastday4"></p></td>
+                <td><p id="forecastday5"></p></td>
+              </tr>
+
+            <tbody>
+          </table>
+
+
+          <p style="clear:right"></p>
+          <div class="article">
+            <h2>Article</h2>
+            <figure class="articlephoto">
+              <img src="images/cloudufo.jpg" alt="article img">
+              <figcaption>Another UFO in Preston Idaho</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum tortor venenatis fermentum. Aenean nisl neque, dignissim a ligula ut, fermentum vehicula ligula. Duis quis risus at neque malesuada posuere. Sed maximus urna ac vulputate iaculis. Nam ut mattis sem. Praesent hendrerit ultrices mauris, ac sagittis ipsum rutrum sit amet. Nullam in purus turpis. Donec convallis quam purus, at suscipit neque posuere et. Ut commodo maximus massa non rutrum. Vestibulum ex lorem, lacinia sit amet sem quis, lacinia rhoncus enim. Aliquam consectetur rutrum arcu, id egestas nulla lobortis et. Maecenas turpis sapien, rhoncus vitae euismod in, vehicula eu velit. Pellentesque vitae diam in ligula accumsan dictum.</p>
+            </div>
+            <section class="footer-distributed">
+              <div class="footer-left">
+              <h3>
+              Peter J Watson
+              </h3>
+      
+            <p class="footer-links">
+              <a href="/lesson3/site-planning/target-audience.html">Target Audience</a> |
+              <a href="/lesson3/site-planning/color-scheme.html">Color Scheme</a> |
+              <a href="/lesson3/site-planning/typography.html">Typography</a>
+            </p>
+            <div class="footer-icons">
+              <a
+                href="#"
+                target="_blank"
+              >
+                <img
+                  src="/lesson4/images/facebook.png"
+                  id="facebook"
+                  alt="Facebook icon"
+              /></a>
+              <a
+                href="#"
+                target="_blank"
+              >
+                <img
+                  src="/lesson4/images/pinterest.png"
+                  id="pinterest"
+                  alt="Pinterest icon"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  src="/lesson4/images/youtube.png"
+                  id="youtube"
+                  alt="Youtube icon"
+                />
+              </a>
+          </div>
+      
+          </div>
+      
+          <div class="footer-center">
+              <div>
+              <img src="/lesson4/images/location.png" alt="location icon" id="location">
+              <p><span>CMR 402 Box 128</span> APO AE</p>
+            </div>
+          <br>
+            <div>
+              <img src="/lesson4/images/phone.png" alt="phone icon" id="phone">
+              <p>+49 151/659145916</p>
+            </div>
+          <br>
+            <div>
+              <img src="/lesson4/images/gmail.png" alt="email icon" id="email">
+              <p>
+                <a href="mailto:peter@villagelanepublishing.com"
+                  >peter@peterjwatson.com</a
+                >
+              </p>
+            </div>
+          </div>
+      
+          <div class="footer-right">
+            <div class="footer-company-about">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=preston,%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        </main>
+
+        <footer>
+          <div class="copywrite">
+          &copy; <span id="currentYear"></span> | Peter Watson | Germany | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+          Last Updated: <span id="lastUpdate"></span>
+          </div>
+        </footer>
+
+
+
+    <script src="js/currentYear.js"></script>
+    <script src="js/lastUpdate.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owm-api-fetch-forecast.js"></script>
+    
+  </body>
+</html>  

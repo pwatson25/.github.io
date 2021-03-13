@@ -6,50 +6,46 @@ body {
 
 nav {
   background-color: #9c4d45;
-  width: 100%;
   text-align: center;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #f4f1de;
+  border-bottom: none;
 }
 
-nav li {
+.navbar {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar li {
   display: none;
 }
 
-.nav-bar .active {
-  background: #3f598c;
-  color: white;
-  font-weight: bold;
-}
-
-nav a {
-  display: block;
-  padding: 0.75rem;
-  text-align: center;
-  text-decoration: none;
-  color: #3d405b;
-  font-weight: bold;
-  font-size: 1.1em;
-  color: white;
-  text-align: center;
-}
-
-nav a:hover {
-  background-color: #3f598c;
-}
-
-.nav-bar {
-  list-style: none;
-  text-align: center;
-}
-
-.nav-bar li:first-child {
+.navbar li:first-child {
   display: block;
 }
 
 .responsive li {
   display: block;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem;
+  text-decoration: none;
+  text-align: left;
+}
+
+.navbar a:hover {
+  background-color: #3f598c;
+}
+
+.navbar .active {
+  background: #3f598c;
+  color: white;
+  font-weight: bold;
 }
 header {
   background-color: #f0a83c;
