@@ -25,22 +25,35 @@ fetch(summaryapiURL)
   ;
 
 
-fetch('https://api.openweathermap.org/data/2.5/forecast?&id=5604473&units=imperial&APPID=07407eccd051a7a7b4fc81e187f47771')
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
-        // go through the list of forecast values looking for 18:00 (6:00 p.m.) records and record index
-        let tempforecast = [];
-        let day = 1;
-        jsObject.list.forEach(x => {
-            if (x.dt_txt.includes('18:00:00')) {
-                tempforecast[day] = x.main.temp;
-                day++;
-            }
-        });
+  const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=36089ae9649ea39369703e6946f36ac3';
 
-        for (let i = 1; i <= 5; i++) {
-            document.getElementById('forecastday' + i).innerHTML = tempforecast[i];
-        }
-    });
- 
+  fetch(forecastURL)
+      .then((response) => response.json())
+      .then((jsObject) => {
+  
+        var weekday = new Array(5);
+        weekday[1] = "Mon";
+        weekday[2] = "Tue";
+        weekday[3] = "Wed";
+        weekday[4] = "Thu";
+        weekday[5] = "Fri";
+
+
+          var dayOfWeek = document.getElementsByClassName("forcast day");
+          var weatherIcon = document.getElementsByClassName("forcast icon");
+          var data = jsObject.list.filter(item => item.dt_txt.includes("18:00:00"));
+          var temp = document.getElementsByClassName("forcast data");
+  
+          for (var i = 0; i < data.length; i++) {
+              var d = new Date(data[i].dt_txt);
+              dayOfWeek[i].textContent = weekday[d.getDay()];
+  
+              const imagesfc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png';
+              const description = data[i].weather[0].description;
+              weatherIcon[i].setAttribute('src', imagesfc);
+              weatherIcon[i].setAttribute('alt', description);
+  
+              temp[i].innerHTML = Math.round(data[i].main.temp) + " &#176;F";
+          }
+  
+      });
