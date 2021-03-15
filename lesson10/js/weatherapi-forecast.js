@@ -39,10 +39,10 @@ fetch(summaryapiURL)
         weekday[5] = "Fri";
 
 
-          var dayOfWeek = document.getElementsByClassName("forcast day");
+          var dayOfWeek = document.getElementsByClassName("forecast-day");
           var weatherIcon = document.getElementsByClassName("weatherIcon");
           var data = jsObject.list.filter(item => item.dt_txt.includes("18:00:00"));
-          var temp = document.getElementsByClassName("forcast data");
+          var temp = document.getElementsByClassName("forecast-data");
   
           for (var i = 0; i < data.length; i++) {
               var d = new Date(data[i].dt_txt);

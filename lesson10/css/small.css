@@ -60,7 +60,9 @@ nav {
   margin-bottom: 1rem;
 }
 
-.forcast {
+.forecast-day,
+.forecast-icon,
+.forecast-data {
   padding: 1rem;
   border: 1px solid #333;
   margin: -1px 0 0 -1px;
@@ -70,17 +72,17 @@ nav {
   align-content: center;
   justify-content: center;
 }
-.forcast img {
+.forecast-icon img {
   width: 5em;
 }
-.forcast.data {
+.forecast-data {
   font-size: 1.3em;
 }
-p.forcast:hover {
+p.forecast:hover {
   background: #c8f1c5;
 }
 
-#head {
+.forecast-day {
   background: #6b80bf;
   text-align: center;
   font-size: 1.3em;
