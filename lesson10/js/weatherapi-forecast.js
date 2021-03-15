@@ -40,7 +40,7 @@ fetch(summaryapiURL)
 
 
           var dayOfWeek = document.getElementsByClassName("forcast day");
-          var weatherIcon = document.getElementsByClassName("forcast icon");
+          var weatherIcon = document.getElementsByClassName("weatherIcon");
           var data = jsObject.list.filter(item => item.dt_txt.includes("18:00:00"));
           var temp = document.getElementsByClassName("forcast data");
   
@@ -48,9 +48,9 @@ fetch(summaryapiURL)
               var d = new Date(data[i].dt_txt);
               dayOfWeek[i].textContent = weekday[d.getDay()];
   
-              const imagesfc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png';
+              const imagesrc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png';
               const description = data[i].weather[0].description;
-              weatherIcon[i].setAttribute('src', imagesfc);
+              weatherIcon[i].setAttribute('src', imagesrc);
               weatherIcon[i].setAttribute('alt', description);
   
               temp[i].innerHTML = Math.round(data[i].main.temp) + " &#176;F";

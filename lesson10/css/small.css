@@ -66,8 +66,16 @@ nav {
   margin: -1px 0 0 -1px;
   box-sizing: border-box;
   background: radial-gradient(#eee, #bed);
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
-
+.forcast img {
+  width: 5em;
+}
+.forcast.data {
+  font-size: 1.3em;
+}
 p.forcast:hover {
   background: #c8f1c5;
 }
