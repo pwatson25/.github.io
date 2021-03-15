@@ -1,24 +1,52 @@
-@media only screen and (min-width: 1200px) {
-  body {
-    background-color: #6b80bf;
-  }
-
+body {
+  background-color: #6b80bf;
+}
+@media only screen and (min-width: 1008px) {
   main {
     max-width: 1920px;
-    padding: 1.2em;
-    margin: 0.75em 8rem;
+    padding: 2.5em;
+    margin: 1em 10rem;
   }
 
-  .towns {
-    grid-template-columns: 1fr 1fr 1fr;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  #annoucementtext {
+    position: absolute;
+    margin-left: 75%;
+    background-color: #ff0;
+    font-size: 1em;
+    width: 25%;
+    padding-top: 0.6em;
+    padding-bottom: 0.5em;
+    text-align: center;
   }
-  .towns section {
-    display: block;
-    width: 250px;
-    padding: 1em;
-    margin: 1em;
+
+  main figure.articlephoto {
+    width: 66%;
+    margin: 0 0 0 2%;
+    float: right;
+  }
+  main figure.articlephoto img {
+    width: 100%;
+  }
+  .article::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .article {
+    padding-bottom: 1em;
+  }
+  .copywrite {
+    padding-top: 1em;
+  }
+}
+@media only screen and (min-width: 540px) {
+  .weatherSummary {
+    position: absolute;
+    top: 6em;
+    left: 3.125em;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    box-shadow: 0 0 20px #111;
+    opacity: 0.8;
   }
 }

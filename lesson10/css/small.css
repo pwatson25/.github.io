@@ -3,14 +3,7 @@ body {
 
   background-color: #f4f1de;
 }
-header {
-  background-color: #f0a83c;
-  padding: 0.5em;
-  font-weight: 700;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
+
 nav {
   background-color: #9c4d45;
   text-align: center;
@@ -55,17 +48,53 @@ nav {
   font-weight: bold;
 }
 
-header.welcome {
-  display: block;
-  text-align: center;
-}
-header .subhead {
-  font-style: italic;
-  font-size: 1em;
-  letter-spacing: 1pt;
-  padding-left: 1.3em;
+.bodyclass {
+  padding: 1rem;
 }
 
+.responsive-table {
+  display: block;
+}
+
+[class^="day-section"] {
+  margin-bottom: 1rem;
+}
+
+.forcast {
+  padding: 1rem;
+  border: 1px solid #333;
+  margin: -1px 0 0 -1px;
+  box-sizing: border-box;
+  background: radial-gradient(#eee, #bed);
+}
+
+p.forcast:hover {
+  background: #c8f1c5;
+}
+
+#head {
+  background: #6b80bf;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .responsive-table {
+    display: flex;
+  }
+  [class^="day-section"] {
+    flex-grow: 1;
+  }
+}
+header {
+  background-color: #f0a83c;
+  padding: 1em;
+  font-weight: 700;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 picture img {
   width: 6rem;
   height: auto;
@@ -90,42 +119,199 @@ h2 {
   color: #9c4d45;
 }
 
-.towns {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  color: #3d405b;
-  font-size: 1em;
-}
-
-.towns section {
-  border: 2px solid #3d405b;
-  border-radius: 10px;
-  background-color: white;
-  padding: 0.55em;
-}
-
-.towns section img {
-  border-radius: 5px;
-  width: 80%;
-  height: auto;
-  filter: blur(0em);
-  transition: filter 1s;
-}
-#motto,
-#motto2,
-#motto3 {
-  font-style: italic;
-}
-
 main {
   background-color: #f4f1de;
 }
+main figure.articlephoto {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+main figure.articlephoto img {
+  width: 100%;
+}
+main figure.articlephoto figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+}
+picture.heroImage {
+  display: block;
+}
+main picture.heroImage img {
+  width: 100%;
+}
+.herodiv {
+  margin: 10px auto;
+  position: relative;
+}
+.weatherSummary h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+.weatherSummary p {
+  font-size: 1em;
+  font-weight: 700;
+}
+.weatherSummary {
+  background: radial-gradient(#eee, #4567aa);
+  border: 1px solid #000;
+  box-shadow: 0 0 20px #111;
+  opacity: 0.8;
+}
+.weatherText {
+  text-align: center;
+}
+p {
+  font-size: 1em;
+  color: #3d405b;
+}
+#annoucementtext {
+  margin: auto;
+  background-color: #ff0;
+  font-size: 1em;
+  padding-top: 0.6em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+#annoucementtext.notfriday {
+  display: none;
+}
 
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 250px;
+  width: 300px;
+  box-shadow: 0 0 20px #808080;
+}
+
+#gmap_canvas {
+  width: 300px;
+  height: 250px;
+  background: none !important;
+  border: 5.5em;
+  margin: 0;
+}
 footer {
   background-color: #f0a83c;
   color: #000;
   font-size: 1em;
   text-align: center;
-  padding: 1em;
+}
+.copywrite {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/*Footer*/
+.footer-distributed {
+  background: #f0a83c;
+  width: 100%;
+  text-align: left;
+  font: bold 1em sans-serif;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+  width: 40%;
+  vertical-align: top;
+  margin-left: 0.8em;
+}
+
+.footer-distributed h3 {
+  color: #212121;
+  font-family: "Montserrat";
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-right: 11rem;
+}
+
+/* Footer links */
+.footer-links {
+  color: #212121;
+  margin: 1.2em 0 0.8em;
+  padding: 0;
+}
+
+.footer-links a {
+  line-height: 1.6;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Footer Center */
+.footer-center {
+  width: 30%;
+  margin-top: 1em;
+}
+
+#email,
+#location,
+#phone {
+  padding: 0.3em;
+  width: 2.5em;
+  position: relative;
+  top: 1em;
+}
+
+#location {
+  width: 2.75em;
+}
+
+.footer-center p {
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+  font-size: 1em;
+  vertical-align: middle;
+  margin: 0;
+}
+.footer-center p a {
+  color: #1f0dbf;
+  text-decoration: none;
+}
+
+/* Footer Right */
+.footer-right {
+  width: 25%;
+  vertical-align: top;
+}
+
+.footer-icons {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+#facebook,
+#pinterest,
+#youtube {
+  padding: 0.2em;
+  width: 2.5em;
+}
+
+@media only screen and (min-width: 275px) {
+  .smallweatherSummary {
+    display: block;
+    top: 25px;
+    right: 50px;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    padding: 0.5rem;
+    margin-top: 1em;
+  }
+  .smallweatherText {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  header {
+    padding-bottom: 0.5em;
+  }
 }
