@@ -1,6 +1,4 @@
-* {
-  cursor: url("/lesson10/images/hurricane.png"), auto;
-}
+
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -143,6 +141,7 @@ main figure.articlephoto {
 }
 main figure.articlephoto img {
   width: 100%;
+  cursor: url("/lesson10/images/abduction_color.png"), auto;
 }
 main figure.articlephoto figcaption {
   text-align: center;
