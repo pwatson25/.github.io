@@ -1,0 +1,296 @@
+* {
+  cursor: url("/lesson10/images/hurricane.png"), auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+
+  background-color: #f4f1de;
+}
+
+nav {
+  background-color: #9c4d45;
+  text-align: center;
+  border-bottom: none;
+}
+
+.navbar {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: none;
+}
+
+.navbar li:first-child {
+  display: block;
+}
+
+.responsive li {
+  display: block;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem;
+  text-decoration: none;
+  text-align: left;
+}
+
+.navbar a:hover {
+  background-color: #3f598c;
+}
+
+.navbar .active {
+  background: #3f598c;
+  color: white;
+  font-weight: bold;
+}
+
+.bodyclass {
+  padding: 1rem;
+}
+
+.responsive-table {
+  display: block;
+}
+
+[class^="day-section"] {
+  margin-bottom: 1rem;
+}
+
+.forecast-day,
+.forecast-icon,
+.forecast-data {
+  padding: 1rem;
+  border: 1px solid #333;
+  margin: -1px 0 0 -1px;
+  box-sizing: border-box;
+  background: radial-gradient(#eee, #bed);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.forecast-icon img {
+  width: 5em;
+}
+.forecast-data {
+  font-size: 1.3em;
+}
+p.forecast:hover {
+  background: #c8f1c5;
+}
+
+.forecast-day {
+  background: #6b80bf;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .responsive-table {
+    display: flex;
+  }
+  [class^="day-section"] {
+    flex-grow: 1;
+  }
+}
+header {
+  background-color: #f0a83c;
+  padding: 1em;
+  font-weight: 700;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+picture img {
+  width: 6rem;
+  height: auto;
+  border-radius: 1em;
+}
+.banner h1 {
+  color: #212121;
+  padding-left: 0.75em;
+  font-size: 1.8em;
+  margin-bottom: 0.3em;
+}
+.siteslogan {
+  font-style: italic;
+  font-size: 1em;
+  letter-spacing: 1pt;
+  padding-left: 1.3em;
+}
+
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.4em;
+  color: #9c4d45;
+}
+
+main {
+  background-color: #f4f1de;
+}
+main figure.articlephoto {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+main figure.articlephoto img {
+  width: 100%;
+}
+main figure.articlephoto figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+}
+picture.heroImage {
+  display: block;
+}
+main picture.heroImage img {
+  width: 100%;
+}
+.herodiv {
+  margin: 10px auto;
+  position: relative;
+}
+.weatherSummary h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.weatherSummary p {
+  font-size: 0.85em;
+  font-weight: 700;
+}
+.weatherSummary {
+  background: radial-gradient(#eee, #4567aa);
+  border: 1px solid #000;
+  box-shadow: 0 0 20px #111;
+  opacity: 0.8;
+}
+.weatherText {
+  text-align: center;
+}
+p {
+  font-size: 1em;
+  color: #3d405b;
+}
+#annoucementtext {
+  margin: auto;
+  background-color: #ff0;
+  font-size: 1em;
+  padding-top: 0.6em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+#annoucementtext.notfriday {
+  display: none;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 250px;
+  width: 300px;
+  box-shadow: 0 0 20px #808080;
+}
+
+#gmap_canvas {
+  width: 300px;
+  height: 250px;
+  background: none !important;
+  border: 5.5em;
+  margin: 0;
+}
+footer {
+  background-color: #f0a83c;
+  color: #000;
+  font-size: 1em;
+  text-align: center;
+}
+.copywrite {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  padding: 2rem;
+  background: #f0a83c;
+}
+.contact .links {
+  color: #212121;
+  margin: 1.2em 0 0.8em;
+  padding: 0;
+}
+.links a {
+  line-height: 1.6;
+  text-decoration: none;
+  color: #212121;
+}
+.links a:hover {
+  color: #4567aa;
+}
+.center p {
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+  font-size: 1em;
+  vertical-align: middle;
+  margin: 0;
+}
+.center p a {
+  color: #1f0dbf;
+  text-decoration: none;
+}
+
+#email,
+#location,
+#phone {
+  padding: 0.3em;
+  width: 2.5em;
+  position: relative;
+  top: 1em;
+}
+
+#location {
+  width: 2.75em;
+}
+
+.social-icons {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+#facebook,
+#pinterest,
+#youtube {
+  padding: 0.2em;
+  width: 2.5em;
+}
+
+@media only screen and (min-width: 275px) {
+  .smallweatherSummary {
+    display: block;
+    top: 25px;
+    right: 50px;
+    background: radial-gradient(#eee, #4567aa);
+    border: 1px solid #000;
+    padding: 0.5rem;
+    margin-top: 1em;
+  }
+  .smallweatherText {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  header {
+    padding-bottom: 0.5em;
+  }
+}

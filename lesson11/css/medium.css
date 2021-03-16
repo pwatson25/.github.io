@@ -1,0 +1,21 @@
+@media only screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navbar a {
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  .navbar li:first-child {
+    display: none;
+  }
+}
