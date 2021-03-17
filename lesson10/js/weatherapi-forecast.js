@@ -32,11 +32,11 @@ fetch(summaryapiURL)
       .then((jsObject) => {
   
         var weekday = new Array(5);
-        weekday[2] = "Mon";
-        weekday[3] = "Tue";
-        weekday[4] = "Wed";
-        weekday[5] = "Thu";
-        weekday[6] = "Fri";
+        weekday[3] = "Mon";
+        weekday[4] = "Tue";
+        weekday[5] = "Wed";
+        weekday[6] = "Thu";
+        weekday[0] = "Fri";
 
 
           var dayOfWeek = document.getElementsByClassName("forecast-day");
