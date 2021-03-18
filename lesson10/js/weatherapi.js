@@ -1,17 +1,16 @@
-let weatherRequest = new XMLHttpRequest();
-let apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=36089ae9649ea39369703e6946f36ac3";
+fetch('https://api.openweathermap.org/data/2.5/find?lat=42.096&lon=-111.877&cnt=50&units=imperial&APPID=07407eccd051a7a7b4fc81e187f47771')
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        const forecastData = jsObject.list.filter((element)=>element.id.includes('5604473' || '5585010' || '5607916'));
 
-weatherRequest.open('Get', apiURL, true);
-weatherRequest.send();
+        console.log(forecastData);
 
-// note the weather array versus main (no array)
+        document.getElementById('current-temp').textContent = jsObject.main.temp;
 
-weatherRequest.onload = function () {
-    let weatherData = JSON.parse(weatherRequest.responseText);
-    console.log(weatherData);    
-
-    
-    document.getElementById('current-temp').innerHTML = weatherData.main.temp;
-    let imagesrc = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon + '.png';
-    document.getElementById('weatherimage').innerHTML = imagesrc;
-}
+        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
+        const desc = jsObject.weather[0].description;
+        document.getElementById('imagesrc').textContent = imagesrc;
+        document.getElementById('icon').setAttribute('src', imagesrc);
+        document.getElementById('icon').setAttribute('alt', desc);
+    });
