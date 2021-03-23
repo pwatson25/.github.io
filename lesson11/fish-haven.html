@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="author" content="Peter Watson">
-    <meta name="description" content="Preston Page">
+    <meta name="description" content="Fish Haven">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -28,11 +28,11 @@
     <nav>
       <ul class="navbar" id="myNavBar">
         <li><a class="hamburger" href="#">&#9776; Menu</a></li>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="/lesson6/preston-6.html">Preston</a></li>
-        <li><a href="../comotia-template/index.html">Soda Springs</a></li>
-        <li><a href="../comotia-template/index.html">Fish Haven</a></li>
-        <li><a href="../comotia-template/index.html">Storm Center</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li class="active"><a href="#">Fish Haven</a></li>
+        <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
         <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
@@ -40,12 +40,12 @@
 
     <main>
       <div class="herodiv">   
-        <h2>Soda Springs</h2>
+        <h2>Fish Haven</h2>
           <picture class="heroImage">
-            <source media="(max-width: 400px)" srcset="images/hero_Small_Compressed.png">
-            <source media="(max-width: 769px)" srcset="images/hero_Medium_Compressed.png">
-            <source media="(max-width: 1200px)" srcset="images/hero_Large_Compressed.png">
-            <img src="/lesson6/images/hero_Standard_Compressed.png" alt="heroimage" id="hero">
+            <source media="(max-width: 400px)" srcset="images/fish_haven_Small.webp">
+            <source media="(max-width: 769px)" srcset="images/fish_haven_Medium.webp">
+            <source media="(max-width: 1200px)" srcset="images/fish_haven_Large.webp">
+            <img src="/lesson11/images/fish_haven_Standard.webp" alt="heroimage" id="hero">
           </picture>
         <section class="weatherSummary">
           <section class="weatherText">
@@ -97,12 +97,12 @@
     <p style="clear:right"></p>
 
     <div class="article">
-      <h2>Article</h2>
-        <figure class="articlephoto">
-          <img src="images/cloudufo.jpg" alt="article img">
-          <figcaption>Another UFO in Preston Idaho</figcaption>
+      <h2>Another Winter Storm In Fish Haven</h2>
+        <figure class="articlephoto" id="snowplow">
+          <img src="images/fish_haven_article.webp" alt="article img">
+          <figcaption>8 More Inches Over Night</figcaption>
         </figure>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet fermentum tortor venenatis fermentum. Aenean nisl neque, dignissim a ligula ut, fermentum vehicula ligula. Duis quis risus at neque malesuada posuere. Sed maximus urna ac vulputate iaculis. Nam ut mattis sem. Praesent hendrerit ultrices mauris, ac sagittis ipsum rutrum sit amet. Nullam in purus turpis. Donec convallis quam purus, at suscipit neque posuere et. Ut commodo maximus massa non rutrum. Vestibulum ex lorem, lacinia sit amet sem quis, lacinia rhoncus enim. Aliquam consectetur rutrum arcu, id egestas nulla lobortis et. Maecenas turpis sapien, rhoncus vitae euismod in, vehicula eu velit. Pellentesque vitae diam in ligula accumsan dictum.</p>
+      <p>As Spring begins, it is of no great surprise that Fish Haven, Idaho is yet again blanketed with snow. Fish Haven is know for little other than fishing and grass. If you want to go to Fish Haven, chains will be required. Though not bike chains. No one around to steal your bike. Nothing special about this winter storm. Another 8 inches over night makes for difficult road conditions. It is advised to stay home. Ice fishing can be found. The mayor of Fish Haven would like to remind everyone to turn off their sprinkelers.</p>
     </div>
     <section class="contact" id="contact">
       <section>
@@ -189,7 +189,7 @@
     <script src="js/currentYear.js"></script>
     <script src="js/lastUpdate.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/weatherapi-forecast.js"></script>
+    <script src="js/fish-api.js"></script>
     
   </body>
 </html>  

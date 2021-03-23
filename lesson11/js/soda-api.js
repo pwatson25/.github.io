@@ -1,4 +1,4 @@
-const summaryapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=36089ae9649ea39369703e6946f36ac3";
+const summaryapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=36089ae9649ea39369703e6946f36ac3";
 fetch(summaryapiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -25,20 +25,21 @@ fetch(summaryapiURL)
   ;
 
 
-  const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=36089ae9649ea39369703e6946f36ac3';
+  const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=36089ae9649ea39369703e6946f36ac3';
 
-  fetch(forecastURL)
-      .then((response) => response.json())
-      .then((jsObject) => {
-  
-        var weekday = new Array(7);
-        weekday[0] = "Sun";
-        weekday[1] = "Mon";
-        weekday[2] = "Tue";
-        weekday[3] = "Wed";
-        weekday[4] = "Thu";
-        weekday[5] = "Fri";
-        weekday[6] = "Sat";
+
+        fetch(forecastURL)
+        .then((response) => response.json())
+        .then((jsObject) => {
+    
+          var weekday = new Array(7);
+          weekday[0] = "Sun";
+          weekday[1] = "Mon";
+          weekday[2] = "Tue";
+          weekday[3] = "Wed";
+          weekday[4] = "Thu";
+          weekday[5] = "Fri";
+          weekday[6] = "Sat";
 
 
 

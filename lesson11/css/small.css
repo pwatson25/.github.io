@@ -1,7 +1,3 @@
-* {
-  cursor: url("/lesson10/images/hurricane.png"), auto;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
 
@@ -141,12 +137,17 @@ main figure.articlephoto {
   margin: auto;
   display: block;
 }
-main figure.articlephoto img {
+#alien img {
   width: 100%;
+  cursor: url("/lesson10/images/abduction_color.png"), auto;
 }
-main figure.articlephoto figcaption {
-  text-align: center;
-  font-size: 0.75rem;
+#inner-tube img {
+  width: 100%;
+  cursor: url("/lesson11/images/inner_tube.png"), auto;
+}
+#snowplow img {
+  width: 100%;
+  cursor: url("/lesson11/images/snowplow.png"), auto;
 }
 picture.heroImage {
   display: block;
@@ -166,6 +167,7 @@ main picture.heroImage img {
   font-size: 0.85em;
   font-weight: 700;
 }
+
 .weatherSummary {
   background: radial-gradient(#eee, #4567aa);
   border: 1px solid #000;
