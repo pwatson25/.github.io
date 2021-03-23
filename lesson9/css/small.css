@@ -89,7 +89,12 @@ h2 {
   font-size: 1.4em;
   color: #9c4d45;
 }
-
+.click1,
+.click2,
+.click3 {
+  text-decoration: none;
+  color: #000;
+}
 .towns {
   text-align: center;
   display: grid;
