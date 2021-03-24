@@ -41,3 +41,9 @@ let strLMD = + lastModDate.getMonth()+1 + "/" + lastModDate.getDate() + "/"
            + lastModDate.getFullYear() + " " + lastModDate.getHours() + ":" 
            + lastModDate.getMinutes() + ":" + lastModDate.getSeconds();
 document.getElementById("lastUpdate").textContent = strLMD;
+
+WebFont.load({
+    google: {
+        families: ['Montserrat', 'Roboto']
+    }
+});
