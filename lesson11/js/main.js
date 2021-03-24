@@ -1,11 +1,3 @@
-let navlinks = document.querySelectorAll(".navbar a");
-let currentURL= window.location.href;
-
-for (let i = 0; i < navlinks.length; i++) {
-    if (navlinks[i]==currentURL) {
-        navlinks[i].classList.add('active')
-    }
-}
 
 function insertannoucement() {
     let today = new Date();
@@ -39,3 +31,13 @@ hambutton.addEventListener('click', () => {
 window.onresize = () => {
     if (window.innerWidth > 760) navbar.classList.remove('responsive')
 };
+
+const thisYear = new Date();
+let year = thisYear.getFullYear();
+document.getElementById("currentYear").textContent = year;
+
+const lastModDate = new Date(document.lastModified);
+let strLMD = + lastModDate.getMonth()+1 + "/" + lastModDate.getDate() + "/" 
+           + lastModDate.getFullYear() + " " + lastModDate.getHours() + ":" 
+           + lastModDate.getMinutes() + ":" + lastModDate.getSeconds();
+document.getElementById("lastUpdate").textContent = strLMD;
