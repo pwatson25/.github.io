@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     
     <title>Weather Me Now | Peter Watson</title>
   </head>
@@ -162,16 +163,8 @@
               >
             </p>
           </div>
-</section>
-<section>
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=preston,%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-            </div>
-          </div>
-
-</section>
-
+  </section>
+<img src="images/preston_idaho_map.png" alt="map of preston" class="preston-map">
     </section>
     
 
@@ -186,6 +179,8 @@
 
     <script src="js/main.js"></script>
     <script src="js/weatherapi-forecast.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+
     
   </body>
 </html>  
