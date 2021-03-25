@@ -43,24 +43,20 @@
           <form method="get" action="thanks.html">
             <fieldset>
               <legend>Contact Information</legend>
-            <label for="fname">First name*: 
-            <input type="text" id="fname" placeholder="John" pattern="[A-Za-z-\.\s]{3,}" required>
-          </label>
-            <label for="lname">Last name*: <input type="text" id="lname" placeholder="Smith" pattern="[A-Za-z-\.\s]{3,}" required></label><br><br>
-            <label for="email">Email:
-            <input type="text" id="email" placeholder="johnsmith@mail.com"><br></label><br>
-            <label>Phone*:
-              <input type="tel" name="phone" placeholder="###-###-####" required>
+            <input type="text" id="fname" placeholder="First Name*" pattern="[A-Za-z-\.\s]{3,}" required>
+            </input><br><br>
+              <input type="text" id="lname" placeholder="Last Name*" pattern="[A-Za-z-\.\s]{3,}" required></input><br><br>
+            <input type="text" id="email" placeholder="Email"><br></input><br>
+              <input type="tel" name="phone" placeholder="Phone Number*" required>
             </label><br><br>
-            <label>Zip Code*:
-              <input type="number" name="zip" required>
-            </label><br><br>
+              <input type="number" name="zip"  placeholder="Zip*" required>
+          </input><br><br>
             </fieldset>
             <fieldset>
               <legend>Important Storm Info</legend>       
             <label>Storm Date:
               <input type="date" name="theDate">
-            </label><br>
+            </label><br><br>
             <label>Storm Type:
               <input name="storms" list="stormlist"></label>
             <datalist id="stormlist">
