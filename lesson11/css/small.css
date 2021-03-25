@@ -137,6 +137,18 @@ main figure.articlephoto {
   margin: auto;
   display: block;
 }
+.events {
+  padding: 1em;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2em;
+  border: 3px solid #3f598c;
+  border-radius: 5px;
+}
+.events p {
+  font-style: italic;
+}
 #alien img {
   width: 100%;
   cursor: url("/lesson10/images/abduction_color.png"), auto;
