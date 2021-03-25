@@ -93,6 +93,10 @@ h2 {
 main {
   background-color: #f4f1de;
 }
+.form {
+  width: 50vw;
+  margin: 0 auto;
+}
 h1.thanks {
   text-align: center;
   font-size: 3em;
